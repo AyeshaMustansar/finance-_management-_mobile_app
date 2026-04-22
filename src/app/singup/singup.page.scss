@@ -1,0 +1,166 @@
+.login-content {
+  --background: #e6f9f1;
+}
+
+.welcome-card {
+  background: #ffffff;
+  border-radius: 0 0 50px 50px;
+  padding: 64px 20px 40px;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.form-container {
+  padding: 32px 28px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f2faf6;
+  border: 1px solid #cceadb;
+  border-radius: 12px;
+  padding: 0 14px;
+}
+
+.custom-input {
+  --background: transparent;
+  --color: #222;
+  --padding-start: 0px;
+  --padding-end: 36px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.input-icon {
+  position: absolute;
+  right: 14px;
+  font-size: 18px;
+  color: #999;
+}
+
+.btn-row {
+  margin-bottom: 4px;
+}
+
+.btn-login {
+  --background: #1db87a;
+  --background-activated: #18a36b;
+  --color: #ffffff;
+  --border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 52px;
+}
+
+.forgot-row {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.forgot-text {
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+.btn-signup {
+  --border-color: #1db87a;
+  --color: #1db87a;
+  --border-radius: 30px;
+  --background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  height: 52px;
+}
+
+.fingerprint-row {
+  text-align: center;
+  margin: 20px 0 6px;
+}
+
+.fp-text {
+  font-size: 13px;
+  color: #444;
+
+  strong {
+    color: #1db87a;
+  }
+}
+
+.or-row {
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.or-text {
+  font-size: 12px;
+  color: #999;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #cceadb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-facebook {
+  font-size: 22px;
+  color: #1877f2;
+}
+
+.icon-google {
+  font-size: 22px;
+  color: #ea4335;
+}
+
+.bottom-row {
+  text-align: center;
+}
+
+.bottom-text {
+  font-size: 12px;
+  color: #888;
+}
+
+.signup-link {
+  color: #1db87a;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+
+<ion-content>
+
+  <div class="header-section">
+
+    <ion-grid class="ion-no-padding">
+
+      <!-- Top Row: Greeting + Bell -->
+      <ion-row class="header-top">
+        <ion-col>
+          <p class="greeting-label">Good Morning</p>
+          <h2 class="greeting-title">Hi, Welcome Back</h2>
+        </ion-col>
+        <ion-col size="auto">
+          <div class="bell-btn">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <span class="bell-dot"></span>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- Stats Row -->
+      <ion-row class="stats-row">
+
+        <ion-col class="stat-card left-card">
+          <div class="stat-label">
+            <ion-icon name="wallet-outline"></ion-icon>
+            <span>Total Balance</span>
+          </div>
+          <p class="stat-value">$7,783.00</p>
+        </ion-col>
+
+        <ion-col class="stat-card right-card">
+          <div class="stat-label">
+            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            <span>Total Expense</span>
+          </div>
+          <p class="stat-value negative">−$1,187.40</p>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+<!-- Progress Bar Section -->
+<div class="progress-section">
+
+  <ion-grid class="ion-no-padding">
+
+    <!-- Bar Row -->
+    <ion-row class="bar-row">
+      <ion-col size="auto">
+        <span class="bar-percent">30%</span>
+      </ion-col>
+      <ion-col class="bar-col">
+        <div class="progress-track">
+          <div class="progress-fill"></div>
+        </div>
+      </ion-col>
+      <ion-col size="auto">
+        <span class="bar-amount">$20,000.00</span>
+      </ion-col>
+    </ion-row>
+
+    <!-- Text Row -->
+    <ion-row class="bar-text-row">
+      <ion-col>
+        <div class="bar-message">
+          <ion-icon name="checkbox-outline"></ion-icon>
+          <span>30% Of Your Expenses. Looks Good.</span>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</div>
+
+
+</ion-content>

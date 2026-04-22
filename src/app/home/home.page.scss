@@ -1,0 +1,165 @@
+/* =============================================
+   FinWise Splash Screen - splash.page.scss
+   ============================================= */
+
+/* Override Ionic default background */
+ion-content.splash-content {
+  --background: #00D09E;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+/* Full-height wrapper */
+.splash-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #2ecc8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid fills full height */
+.splash-grid {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Row centered vertically and horizontally */
+.splash-row {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Column centered */
+.splash-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Logo container: icon + text stacked */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Icon wrapper */
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(80px, 22vw, 120px);
+  height: clamp(80px, 22vw, 120px);
+}
+
+/* SVG fills icon wrapper */
+.finwise-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Brand name below icon */
+.brand-name {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.brand-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: clamp(22px, 6vw, 32px);
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Entrance animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================
+   Responsive Breakpoints
+   ============================================= */
+
+/* Small phones (< 360px) */
+@media (max-width: 359px) {
+  .logo-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brand-text {
+    font-size: 20px;
+  }
+}
+
+/* Standard phones (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+  .logo-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .brand-text {
+    font-size: 24px;
+  }
+}
+
+/* Large phones / small tablets (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .logo-icon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .brand-text {
+    font-size: 28px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-icon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .brand-text {
+    font-size: 34px;
+  }
+}
+
+/* Desktops (> 1024px) */
+@media (min-width: 1025px) {
+  .logo-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .brand-text {
+    font-size: 40px;
+  }
+}

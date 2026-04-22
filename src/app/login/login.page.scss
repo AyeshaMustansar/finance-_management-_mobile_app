@@ -1,0 +1,110 @@
+ion-content.welcome-content {
+  --background: #e8f8f0;
+}
+
+.welcome-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e8f8f0;
+  padding: 40px 32px;
+}
+
+/* ── Logo Section ── */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.logo-icon {
+  width: 110px;
+  height: 95px;
+  margin-bottom: 10px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.brand-name {
+  font-size: 100px;
+  font-weight: 600;
+  color: #2ecc8a ;
+  margin: 0 0 12px 0;
+  font-family: sans-serif;
+
+}
+
+.brand-desc {
+  font-size: 14px;
+  color: #7a9a8a;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Buttons Section ── */
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  gap: 14px;
+}
+
+.btn-login {
+  --background: #00D09E;
+  --background-activated: #27b87c;
+  --background-hover: #27b87c;
+  --color: #ffffff;
+  --border-radius: 50px;
+  --box-shadow: 0 4px 18px rgba(46, 204, 138, 0.4);
+  width: 100%;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-signup {
+  --background: transparent;
+  --color: #1a2e44;
+  --border-color: #b0ccc0;
+  --border-width: 2px;
+  --border-style: solid;
+  --border-radius: 50px;
+  --box-shadow: none;
+  --background-activated: transparent;
+  width: 100%;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.forgot-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a2e44;
+  margin: 4px 0 0 0;
+  cursor: pointer;
+}
+
+/* ── Responsive ── */
+@media (max-width: 360px) {
+  .logo-icon { width: 85px; height: 75px; }
+  .brand-name { font-size: 30px; }
+  .btn-login, .btn-signup { height: 46px; font-size: 15px; }
+}
+
+@media (min-width: 768px) {
+  .logo-icon { width: 140px; height: 120px; }
+  .brand-name { font-size: 48px; }
+  .buttons-section { max-width: 360px; }
+}

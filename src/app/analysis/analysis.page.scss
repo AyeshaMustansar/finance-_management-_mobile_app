@@ -1,0 +1,191 @@
+.header-section {
+  background: #00C896;
+  padding: 44px 16px 36px;
+  position: relative;
+  overflow: hidden;
+
+  // Decorative blob
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+    top: -60px;
+    right: -40px;
+  }
+}
+
+// Top row
+.header-top {
+  align-items: flex-start;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.greeting-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 2px 0;
+}
+
+.greeting-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+// Bell button
+.bell-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 20px;
+    color: #00C896;
+  }
+}
+
+.bell-dot {
+  width: 8px;
+  height: 8px;
+  background: #FF5F6D;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  border: 2px solid #fff;
+}
+
+// Stats row
+.stats-row {
+  position: relative;
+  z-index: 1;
+  align-items: stretch;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.left-card {
+  padding-right: 20px;
+  border-right: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.right-card {
+  padding-left: 20px;
+}
+
+.stat-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+
+  ion-icon {
+    font-size: 15px;
+    color: #000;
+  }
+}
+
+// Left value — white
+.stat-value {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  margin: 0;
+}
+
+// Right value — dark green
+.stat-value.negative {
+  color: #007a55;
+}
+.progress-section {
+  background: #00C896;
+  padding: 0 16px 28px;
+  position: relative;
+  z-index: 1;
+}
+
+// Bar row alignment
+.bar-row {
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bar-percent {
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+  padding-right: 8px;
+}
+
+.bar-col {
+  padding: 0 4px;
+}
+
+// Track (background)
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+// Fill (dark/black)
+.progress-fill {
+  width: 30%;
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 999px;
+}
+
+.bar-amount {
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+  padding-left: 8px;
+  white-space: nowrap;
+}
+
+// Message row
+.bar-text-row {
+  margin-top: 4px;
+}
+
+.bar-message {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+
+  ion-icon {
+    font-size: 17px;
+    color: #000;
+  }
+}
