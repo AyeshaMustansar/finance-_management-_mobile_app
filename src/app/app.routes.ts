@@ -26,4 +26,5 @@ export const routes: Routes = [
     path: 'analysis',
     loadComponent: () => import('./analysis/analysis.page').then( m => m.AnalysisPage)
   },
+ 
 ];
