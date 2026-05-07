@@ -30,5 +30,9 @@ export const routes: Routes = [
     path: 'notification',
     loadComponent: () => import('./notification/notification.page').then( m => m.NotificationPage)
   },
+  {
+    path: 'accountbalance',
+    loadComponent: () => import('./accountbalance/accountbalance.page').then( m => m.AccountbalancePage)
+  },
  
 ];

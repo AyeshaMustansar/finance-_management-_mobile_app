@@ -1,0 +1,185 @@
+<ion-content class="account-content">
+
+  <!-- GREEN/DARK TOP SECTION -->
+  <div class="top-section">
+
+    <!-- Navbar Row -->
+    <div class="navbar-row">
+      <div class="nav-btn">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </div>
+
+      <div class="nav-title">Account Balance</div>
+
+      <div class="nav-btn">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Balance Cards Row -->
+    <div class="balance-row">
+
+      <!-- Total Balance -->
+      <div class="balance-card">
+        <div class="balance-card__label">
+          <ion-icon name="wallet-outline"></ion-icon>
+          <span>Total Balance</span>
+        </div>
+        <div class="balance-card__amount">$7,783.00</div>
+      </div>
+
+      <div class="balance-divider"></div>
+
+      <!-- Total Expense -->
+      <div class="balance-card">
+        <div class="balance-card__label">
+          <ion-icon name="card-outline"></ion-icon>
+          <span>Total Expense</span>
+        </div>
+        <div class="balance-card__amount balance-card__amount--red">-$1,187.40</div>
+      </div>
+
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-wrap">
+      <div class="progress-bar-outer">
+        <span class="progress-label">30%</span>
+        <div class="progress-bar-inner">
+          <span class="progress-amount">$20,000.00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Income / Expense Cards -->
+    <div class="ie-row">
+
+      <!-- Income -->
+      <div class="ie-card">
+        <div class="ie-icon-wrap ie-icon-wrap--teal">
+          <ion-icon name="arrow-up"></ion-icon>
+        </div>
+        <div class="ie-label">Income</div>
+        <div class="ie-amount">$4,000.00</div>
+      </div>
+
+      <!-- Expense -->
+      <div class="ie-card">
+        <div class="ie-icon-wrap ie-icon-wrap--blue">
+          <ion-icon name="arrow-down"></ion-icon>
+        </div>
+        <div class="ie-label">Expense</div>
+        <div class="ie-amount ie-amount--teal">$1,187.40</div>
+      </div>
+
+    </div>
+
+    <!-- Checkbox Note -->
+    <div class="note-row">
+      <ion-icon name="checkbox-outline" class="note-icon"></ion-icon>
+      <span class="note-text">30% Of Your Expenses, Looks Good.</span>
+    </div>
+
+  </div>
+
+  <!-- TRANSACTIONS SECTION -->
+  <div class="txn-section">
+
+    <!-- Header -->
+    <div class="txn-header">
+      <span class="txn-title">Transactions</span>
+      <span class="txn-see-all">See all</span>
+    </div>
+
+    <!-- Salary -->
+    <div class="txn-item">
+      <div class="txn-icon-wrap txn-icon--1">
+        <ion-icon name="cash-outline"></ion-icon>
+      </div>
+      <div class="txn-info">
+        <div class="txn-name">Salary</div>
+        <div class="txn-date txn-date--blue">18:27 - April 30</div>
+      </div>
+      <div class="txn-tag">Monthly</div>
+      <div class="txn-divider"></div>
+      <div class="txn-amount txn-amount--dark">$4,000,00</div>
+    </div>
+
+    <!-- Groceries -->
+    <div class="txn-item">
+      <div class="txn-icon-wrap txn-icon--2">
+        <ion-icon name="basket-outline"></ion-icon>
+      </div>
+      <div class="txn-info">
+        <div class="txn-name">Groceries</div>
+        <div class="txn-date txn-date--blue">17:00 - April 24</div>
+      </div>
+      <div class="txn-tag">Pantry</div>
+      <div class="txn-divider"></div>
+      <div class="txn-amount txn-amount--red">-$100,00</div>
+    </div>
+
+    <!-- Rent -->
+    <div class="txn-item">
+      <div class="txn-icon-wrap txn-icon--3">
+        <ion-icon name="home-outline"></ion-icon>
+      </div>
+      <div class="txn-info">
+        <div class="txn-name">Rent</div>
+        <div class="txn-date txn-date--blue">8:30 - April 15</div>
+      </div>
+      <div class="txn-tag">Rent</div>
+      <div class="txn-divider"></div>
+      <div class="txn-amount txn-amount--red">-$674,40</div>
+    </div>
+
+    <!-- Transport -->
+    <div class="txn-item">
+      <div class="txn-icon-wrap txn-icon--4">
+        <ion-icon name="bus-outline"></ion-icon>
+      </div>
+      <div class="txn-info">
+        <div class="txn-name">Transport</div>
+        <div class="txn-date txn-date--blue">9:30 - April 08</div>
+      </div>
+      <div class="txn-tag">Fuel</div>
+      <div class="txn-divider"></div>
+      <div class="txn-amount txn-amount--red">-$4,13</div>
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border footer-wrap">
+  <div class="bottom-nav">
+
+    <!-- Home (active) -->
+    <div class="nav-item nav-item--active">
+      <div class="nav-active-bg">
+        <ion-icon name="home-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Analytics -->
+    <div class="nav-item">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+    </div>
+
+    <!-- Transfer -->
+    <div class="nav-item">
+      <ion-icon name="swap-horizontal-outline"></ion-icon>
+    </div>
+
+    <!-- Layers -->
+    <div class="nav-item">
+      <ion-icon name="layers-outline"></ion-icon>
+    </div>
+
+    <!-- Profile -->
+    <div class="nav-item">
+      <ion-icon name="person-outline"></ion-icon>
+    </div>
+
+  </div>
+</ion-footer>

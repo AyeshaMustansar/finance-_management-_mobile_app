@@ -1,0 +1,372 @@
+// ── Content ────────────────────────────────────────────────
+.account-content {
+  --background: #ffff;
+}
+
+// ── Top dark section ───────────────────────────────────────
+.top-section {
+  background: #1a1f2e;
+  padding: 52px 20px 90px;
+  border-radius: 0;
+}
+
+// ── Navbar row ─────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.nav-btn {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+// ── Progress Bar ───────────────────────────────────────────
+.progress-wrap {
+  margin-top: 20px;
+}
+
+.progress-bar-outer {
+  background: #000;
+  border-radius: 66px;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.progress-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.progress-bar-inner {
+  border-radius: 36px;
+  height: 100%;
+  width: 81%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 14px;
+  box-sizing: border-box;
+  margin-left: auto;
+  background-color: #ffffff;
+
+  .progress-amount {
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.balance-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 16px 18px;
+}
+
+.balance-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+
+    ion-icon {
+      font-size: 14px;
+      color: #2ECFB0;
+    }
+
+    span {
+      font-size: 12px;
+      color: #a0aab8;
+      font-weight: 500;
+    }
+  }
+
+  &__amount {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+
+    &--red {
+      color: #2ECFB0;
+    }
+  }
+}
+
+.balance-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 12px;
+}
+
+// ── Income / Expense Cards ─────────────────────────────────
+.ie-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.ie-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ie-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  &--teal {
+    background: #2ECFB0;
+  }
+
+  &--blue {
+    background: #4e8ef7;
+  }
+}
+
+.ie-label {
+  font-size: 13px;
+  color: #8a94a6;
+  font-weight: 500;
+}
+
+.ie-amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1f2e;
+
+  &--teal {
+    color: #2ECFB0;
+  }
+}
+
+// ── Note row ───────────────────────────────────────────────
+.note-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+
+  .note-icon {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .note-text {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+}
+
+// ── Transactions Section ───────────────────────────────────
+.txn-section {
+  background: #ffffff;
+  border-radius: 28px 28px 0 0;
+  margin-top: -50px;
+  padding: 20px 16px;
+}
+
+.txn-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.txn-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-see-all {
+  font-size: 13px;
+  color: #2ECFB0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f3f7;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.txn-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &.txn-icon--1 { background: #6DB6FE; }
+  &.txn-icon--2 { background: #3299FF; }
+  &.txn-icon--3 { background: #0068FF; }
+  &.txn-icon--4 { background: #3299FF; }
+}
+
+.txn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.txn-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-date {
+  font-size: 11px;
+  color: #3299FF;
+}
+
+.txn-tag {
+  font-size: 11px;
+  color: #a0aab8;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.txn-divider {
+  width: 2px;
+  height: 28px;
+  background: #00D09E;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.txn-amount {
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+
+  &--dark {
+    color: #1a1f2e;
+  }
+
+  &--red {
+    color: #ff5e6c;
+  }
+}
+
+// ── Footer ─────────────────────────────────────────────────
+.footer-wrap {
+  --background: transparent;
+  background: transparent;
+  padding: 0;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #dff7f0;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
