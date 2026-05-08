@@ -34,5 +34,9 @@ export const routes: Routes = [
     path: 'accountbalance',
     loadComponent: () => import('./accountbalance/accountbalance.page').then( m => m.AccountbalancePage)
   },
+  {
+    path: 'quickanalysis',
+    loadComponent: () => import('./quickanalysis/quickanalysis.page').then( m => m.QuickanalysisPage)
+  },
  
 ];

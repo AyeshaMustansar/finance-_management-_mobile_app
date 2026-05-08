@@ -3,9 +3,18 @@
   --background: #ffff;
 }
 
+
+
+
+ion-content {
+  --padding-bottom: 100px;  
+}
+
+
+
 // ── Top dark section ───────────────────────────────────────
 .top-section {
-  background: #1a1f2e;
+  background: #00D09E;
   padding: 52px 20px 90px;
   border-radius: 0;
 }
@@ -90,7 +99,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.07);
+
   border-radius: 18px;
   padding: 16px 18px;
 }
@@ -109,12 +118,12 @@
 
     ion-icon {
       font-size: 14px;
-      color: #2ECFB0;
+      color: black;
     }
 
     span {
       font-size: 12px;
-      color: #a0aab8;
+      color: black;
       font-weight: 500;
     }
   }
@@ -126,7 +135,7 @@
     letter-spacing: 0.3px;
 
     &--red {
-      color: #2ECFB0;
+      color:#0068FF;
     }
   }
 }
@@ -324,23 +333,23 @@
   }
 }
 
-// ── Footer ─────────────────────────────────────────────────
-.footer-wrap {
-  --background: transparent;
-  background: transparent;
-  padding: 0;
-}
+// // ── Footer ─────────────────────────────────────────────────
+// .footer-wrap {
+//   --background: transparent;
+//   background: transparent;
+//   padding: 0;
+// }
 
-.bottom-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background: #dff7f0;
-  border-radius: 61px 61px 0 0;
-  padding: 14px 16px 20px;
-  width: 100%;
-}
+// .bottom-nav {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-around;
+//   background: #dff7f0;
+//   border-radius: 61px 61px 0 0;
+//   padding: 14px 16px 20px;
+//   width: 100%;
+// }
 
 .nav-item {
   display: flex;
@@ -369,4 +378,25 @@
     font-size: 24px;
     color: #ffffff;
   }
+}
+
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;   
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: center;
+
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+
+
 }

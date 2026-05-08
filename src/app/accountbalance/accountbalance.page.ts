@@ -32,6 +32,7 @@ export class AccountbalancePage implements OnInit {
      swapHorizontalOutline,
      layersOutline,
      personOutline,
+     
 
     })
   }
