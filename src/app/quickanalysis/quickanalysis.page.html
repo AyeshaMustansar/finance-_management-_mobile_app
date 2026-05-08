@@ -1,13 +1,223 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>quickanalysis</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="analysis-content">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">quickanalysis</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- GREEN TOP SECTION -->
+  <div class="top-section">
+
+    <!-- Navbar Row -->
+    <div class="navbar-row">
+      <div class="nav-btn nav-btn--back">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </div>
+
+      <div class="nav-title-wrap">
+        <span class="nav-title">Quickly Analysis</span>
+        <span class="nav-title-dot">:</span>
+      </div>
+
+      <div class="nav-btn nav-btn--bell">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Main Row: Circle + Divider + Stats -->
+    <div class="analysis-row">
+
+      <!-- Left: Circle with car icon -->
+      <div class="circle-wrap">
+        <div class="circle-outer">
+          <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle-svg">
+            <circle cx="47.9924" cy="47.9923" r="46.3594" transform="rotate(-87.7272 47.9924 47.9923)" stroke="#F1FFF3" stroke-width="3.26474" stroke-linejoin="round"/>
+          </svg>
+          <svg width="53" height="98" viewBox="0 0 53 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle-svg-blue">
+            <path d="M5.98826 2.28579C31.5717 3.30117 51.4822 25.0098 50.4597 50.7734C49.4371 76.537 27.8688 96.5994 2.28534 95.584" stroke="#0068FF" stroke-width="4.57064" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="circle-inner">
+            <ion-icon name="car-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="circle-label">Savings<br>On Goals</div>
+      </div>
+
+      <!-- Vertical Divider -->
+      <div class="vertical-divider"></div>
+
+      <!-- Right: Stats -->
+      <div class="stats-wrap">
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+          <div class="stat-info">
+            <div class="stat-label">Revenue Last Week</div>
+            <div class="stat-amount">$4,000.00</div>
+          </div>
+        </div>
+
+        <div class="horizontal-divider"></div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrap">
+            <ion-icon name="restaurant-outline"></ion-icon>
+          </div>
+          <div class="stat-info">
+            <div class="stat-label">Food Last Week</div>
+            <div class="stat-amount stat-amount--blue">-$100.00</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END GREEN SECTION -->
+
+  <!-- WHITE SECTION -->
+  <div class="white-section">
+
+    <!-- APRIL EXPENSES CARD -->
+    <div class="expenses-card">
+      <div class="expenses-header">
+        <span class="expenses-title">April Expenses</span>
+        <div class="expenses-actions">
+          <div class="action-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="action-btn">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <div class="chart-inner">
+          <div class="y-row">
+            <span class="y-label">15k</span>
+            <div class="y-line"></div>
+          </div>
+          <div class="y-row">
+            <span class="y-label">10k</span>
+            <div class="y-line"></div>
+          </div>
+          <div class="y-row">
+            <span class="y-label">5k</span>
+            <div class="y-line"></div>
+          </div>
+          <div class="y-row">
+            <span class="y-label">1k</span>
+            <div class="y-line"></div>
+          </div>
+
+          <div class="bars-row">
+            <div class="bar-group">
+              <div class="bar-pair">
+                <div class="bar bar--blue" style="height: 30px"></div>
+                <div class="bar bar--green" style="height: 15px"></div>
+              </div>
+              <span class="bar-label">1st Week</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-pair">
+                <div class="bar bar--blue" style="height: 50px"></div>
+                <div class="bar bar--green" style="height: 20px"></div>
+              </div>
+              <span class="bar-label">2nd Week</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-pair">
+                <div class="bar bar--blue" style="height: 90px"></div>
+                <div class="bar bar--green" style="height: 25px"></div>
+              </div>
+              <span class="bar-label">3rd Week</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-pair">
+                <div class="bar bar--blue" style="height: 40px"></div>
+                <div class="bar bar--green" style="height: 60px"></div>
+              </div>
+              <span class="bar-label">4th Week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRANSACTION LIST -->
+    <div class="txn-list">
+
+      <!-- Salary -->
+      <div class="txn-item">
+        <div class="txn-icon-wrap" style="background: #6DB6FE;">
+          <ion-icon name="cash-outline"></ion-icon>
+        </div>
+        <div class="txn-info">
+          <div class="txn-name">Salary</div>
+          <div class="txn-date">18:27 - April 30</div>
+        </div>
+        <div class="txn-right">
+          <div class="txn-divider"></div>
+          <div class="txn-tag">Monthly</div>
+          <div class="txn-divider"></div>
+          <div class="txn-amount txn-amount--dark">$4,000,00</div>
+        </div>
+      </div>
+
+      <!-- Groceries -->
+      <div class="txn-item">
+        <div class="txn-icon-wrap" style="background: #3299FF;">
+          <ion-icon name="basket-outline"></ion-icon>
+        </div>
+        <div class="txn-info">
+          <div class="txn-name">Groceries</div>
+          <div class="txn-date">17:00 - April 24</div>
+        </div>
+        <div class="txn-right">
+          <div class="txn-divider"></div>
+          <div class="txn-tag">Pantry</div>
+          <div class="txn-divider"></div>
+          <div class="txn-amount txn-amount--red">-$100,00</div>
+        </div>
+      </div>
+
+      <!-- Rent -->
+      <div class="txn-item">
+        <div class="txn-icon-wrap" style="background: #0068FF;">
+          <ion-icon name="home-outline"></ion-icon>
+        </div>
+        <div class="txn-info">
+          <div class="txn-name">Rent</div>
+          <div class="txn-date">8:30 - April 15</div>
+        </div>
+        <div class="txn-right">
+          <div class="txn-divider"></div>
+          <div class="txn-tag">Rent</div>
+          <div class="txn-divider"></div>
+          <div class="txn-amount txn-amount--red">-$674,40</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END WHITE SECTION -->
+
 </ion-content>
+
+<ion-footer class="floating-footer">
+  <div class="nav-item nav-item--active">
+    <div class="nav-active-bg">
+      <ion-icon name="home-outline"></ion-icon>
+    </div>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="bar-chart-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="swap-horizontal-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="layers-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="person-outline"></ion-icon>
+  </div>
+</ion-footer>

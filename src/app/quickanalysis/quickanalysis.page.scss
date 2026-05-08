@@ -1,0 +1,471 @@
+ ── Content ────────────────────────────────────────────────
+.analysis-content {
+  --background: transparent;  // ← transparent karo, divs handle karenge
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+// ── GREEN TOP SECTION ──────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: 52px 20px 80px;  // extra bottom padding overlap ke liye
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: 20px; }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+
+  border-radius: 10px;
+  padding: 6px 16px;
+}
+
+.nav-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-title-dot {
+  font-size: 17px;
+  font-weight: 700;
+  color:black;
+}
+
+// ── Analysis Row ───────────────────────────────────────────
+.analysis-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+
+// ── Circle ─────────────────────────────────────────────────
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.circle-outer {
+  width: 96px;
+  height: 96px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+}
+
+.circle-svg-blue {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 53px;
+  height: 98px;
+}
+
+.circle-inner {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+  ion-icon {
+    font-size: 32px;
+    color: #ffffff;
+  }
+}
+
+.circle-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+}
+
+// ── Vertical Divider ───────────────────────────────────────
+.vertical-divider {
+  width: 2px;
+  height: 110px;
+  background: white;
+  border-radius: 2px;
+  margin: 0 16px;
+  flex-shrink: 0;
+}
+
+// ── Stats ──────────────────────────────────────────────────
+.stats-wrap {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.stat-icon-wrap {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 20px;
+    color: #1a1f2e;
+  }
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #1a1f2e;
+  font-weight: 500;
+}
+
+.stat-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1f2e;
+
+  &--blue { color: #1565ff; }
+}
+
+// ── Horizontal Divider ─────────────────────────────────────
+.horizontal-divider {
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  margin: 4px 0;
+}
+
+// ── WHITE SECTION ──────────────────────────────────────────
+.white-section {
+background: #f0faf7;
+    border-radius: 28px 28px 0 0;
+    margin-top: -36px;
+    padding-top: 41px;
+    padding-bottom: 68px;
+}
+
+// ── Expenses Card ──────────────────────────────────────────
+.expenses-card {
+  background: #ffffff;
+  border-radius: 24px;
+  margin: 20px 16px;
+  padding: 18px 16px;
+}
+
+.expenses-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.expenses-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.expenses-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+  background: #2ECFB0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 16px;
+    color: black;
+  }
+}
+
+// ── Chart ──────────────────────────────────────────────────
+.chart-wrap {
+  position: relative;
+}
+
+.chart-inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.y-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+}
+
+.y-label {
+  font-size: 10px;
+  color: #a0aab8;
+  width: 26px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.y-line {
+  flex: 1;
+  height: 1px;
+  border-top: 1px dashed #d0d8e4;
+}
+
+// ── Bars ───────────────────────────────────────────────────
+.bars-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-left: 32px;
+  margin-top: -112px;
+  height: 112px;
+  gap: 8px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.bar-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.bar {
+  width: 8px;
+  border-radius: 4px 4px 0 0;
+
+  &--blue  { background: #0068FF; }
+  &--green { background: #2ECFB0; }
+}
+
+.bar-label {
+  font-size: 9px;
+  color: #a0aab8;
+  text-align: center;
+  white-space: nowrap;
+}
+
+// ── Transaction List ───────────────────────────────────────
+.txn-list {
+  padding: 0 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 16px;
+  padding: 14px 12px;
+}
+
+.txn-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+
+.txn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.txn-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-date {
+  font-size: 11px;
+  color: #0068FF;
+  font-weight: 500;
+}
+
+// ── Txn Right ──────────────────────────────────────────────
+.txn-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.txn-dividers-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.txn-divider {
+  width: 28px;
+  height: 2px;
+  background: #00D09E;
+  border-radius: 2px;
+}
+
+.txn-tag {
+  font-size: 12px;
+  color: #1a1f2e;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.txn-amount {
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+
+  &--dark { color: #1a1f2e; }
+  &--red  { color: black; }
+}
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
