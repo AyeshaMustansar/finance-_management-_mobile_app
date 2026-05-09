@@ -1,29 +1,23 @@
 // ── Content ────────────────────────────────────────────────
-.transaction-content {
-  --background:#2ECFB0 ;
+.analysis2-content {
+  --background: #f0faf7;
   --padding-top: 0;
   --padding-bottom: 0;
   --padding-start: 0;
   --padding-end: 0;
 }
 
-// ── Main Content Wrapper ───────────────────────────────────
+// ── Main wrapper ───────────────────────────────────────────
 .main-content {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-ion-content {
-  --padding-bottom: 100px;  
-}
-
-
-
 // ── Top teal section ───────────────────────────────────────
 .top-section {
   background: #2ECFB0;
-  padding: 52px 20px 28px;
+  padding: 52px 20px 80px;
 }
 
 // ── Navbar ─────────────────────────────────────────────────
@@ -49,7 +43,6 @@ ion-content {
   &.nav-btn--back {
     background: transparent;
     ion-icon { color: #ffffff; }
-
   }
 
   &.nav-btn--bell {
@@ -59,31 +52,9 @@ ion-content {
 }
 
 .nav-title {
-  font-size: 18px;
-  font-weight: 700;
-  color:#052224;
-}
-
-// ── White Balance Card ─────────────────────────────────────
-.balance-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 16px;
-
-  &__label {
-    font-size: 13px;
+font-size: 28px;
+    /* font-weight: 600; */
     color: #0068FF;
-    font-weight: 500;
-    margin-bottom: 6px;
-  }
-
-  &__amount {
-    font-size: 32px;
-    font-weight: 700;
-    color: #1a1f2e;
-  }
 }
 
 // ── Stats Row ──────────────────────────────────────────────
@@ -91,10 +62,6 @@ ion-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-
-  border-radius: 16px;
-  padding: 14px 16px;
   margin-bottom: 16px;
 }
 
@@ -108,7 +75,7 @@ ion-content {
 
 .stat-icon {
   font-size: 16px;
-  color: black;
+  color: #000000;
 }
 
 .stat-info {
@@ -118,25 +85,25 @@ ion-content {
 }
 
 .stat-label {
-  font-size: 11px;
+  font-size: 14px;
   color: #0068FF;
   font-weight: 500;
 }
 
 .stat-amount {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 700;
-  color: #ffffff;
+  color: #0068FF;
 
-  &--teal {
-    color: #0068FF;
+  &--dark {
+    color: #1a1f2e;
   }
 }
 
 .stats-divider {
   width: 1px;
-  height: 37px;
-  background:white;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.50);
   margin: 0 12px;
   flex-shrink: 0;
 }
@@ -160,7 +127,7 @@ ion-content {
 .progress-label {
   font-size: 13px;
   font-weight: 700;
-  color: white;
+  color: #ffffff;
   padding-left: 10px;
   flex-shrink: 0;
 }
@@ -180,138 +147,238 @@ ion-content {
   .progress-amount {
     font-size: 13px;
     font-weight: 700;
-    color: black;
+    color: #000000;
   }
 }
 
 // ── Note Row ───────────────────────────────────────────────
 .note-row {
- 
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
 
   .note-icon {
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    color: #000000;
   }
 
   .note-text {
     font-size: 16px;
-    color: black;
+    color: #000000;
     font-weight: 500;
   }
 }
 
-// ── White Overlap Section ──────────────────────────────────
+// ── White Section ──────────────────────────────────────────
 .white-section {
   background: #f0faf7;
-  border-radius: 46px 46px 0 0;
-  margin-top: -20px;
-  padding: 24px 16px 40px;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: 20px 16px 40px;
+  flex: 1;
+}
+
+// ── Tab Bar ────────────────────────────────────────────────
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #dff7f0;
+    border-radius: 18px;
+    padding: 15px;
+    margin-bottom: 16px;
+
+}
+
+.tab-item {
+flex: 1;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1f2e;
+    padding: 20px 0;
+    border-radius: 15px;
+    cursor: pointer;
+
+  &--active {
+    background: #2ECFB0;
+    color: #ffffff;
+  }
+}
+
+// ── Expenses Card ──────────────────────────────────────────
+.expenses-card {
+border-radius: 33px;
+    padding: 33px 16px;
+    background-color: #DFF7E2;
+}
+
+.expenses-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.expenses-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0068FF;
+}
+
+.expenses-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+  background: #2ECFB0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 16px;
+    color: #0068FF;
+  }
+}
+
+// ── Chart ──────────────────────────────────────────────────
+.chart-wrap {
+  position: relative;
+}
+
+.chart-inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.y-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+}
+
+.y-label {
+  font-size: 10px;
+  color: #a0aab8;
+  width: 26px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.y-line {
+  flex: 1;
+  height: 1px;
+  border-top: 1px dashed #d0d8e4;
+}
+
+// ── Bars ───────────────────────────────────────────────────
+.bars-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-left: 32px;
+  margin-top: -112px;
+  height: 112px;
+  gap: 4px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.bar-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.bar {
+  width: 7px;
+  border-radius: 4px 4px 0 0;
+
+  &--blue  { background: #0068FF; }
+  &--green { background: #2ECFB0; }
+}
+
+.bar-label {
+  font-size: 9px;
+  color: #a0aab8;
+  text-align: center;
+  white-space: nowrap;
+}
+
+// ── Income / Expense Cards ─────────────────────────────────
+.ie-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.ie-card {
+  flex: 1;
+
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ie-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &--teal { background: #2ECFB0; }
+  &--blue { background: #0068FF; }
+}
+
+.ie-label {
+  font-size: 13px;
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.ie-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0068FF;
 }
 
 // ── Section Label ──────────────────────────────────────────
 .section-label {
   font-size: 16px;
   font-weight: 700;
-  color: #1a1f2e;
-  margin-bottom: 12px;
-  margin-top: 8px;
-}
-
-// ── Transaction List ───────────────────────────────────────
-.txn-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.txn-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 16px;
-  padding: 12px 12px;
-}
-
-.txn-icon-wrap {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-
-  ion-icon {
-    font-size: 20px;
-    color: #ffffff;
-  }
-}
-
-.txn-info {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  flex: 1;
-}
-
-.txn-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #1a1f2e;
-}
-
-.txn-date {
-  font-size: 11px;
   color: #0068FF;
-  font-weight: 500;
-}
-
-.txn-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  flex-shrink: 0;
-  width: 150px;
-}
-
-.txn-divider {
-  width: 2px;
-  height: 28px;
-  background: #00D09E;
-  border-radius: 2px;
-  flex-shrink: 0;
-  align-self: center;
-}
-
-.txn-tag {
-  font-size: 12px;
-  color: #1a1f2e;
-  font-weight: 500;
-  flex-shrink: 0;
-  width: 50px;
-  text-align: center;
-  align-self: center;
-}
-
-.txn-amount {
-  font-size: 13px;
-  font-weight: 700;
-  flex-shrink: 0;
-  width: 58px;
-  text-align: right;
-
-  &--dark { color: #1a1f2e; }
-  &--red  { color: #1a1f2e; }
 }
 
 

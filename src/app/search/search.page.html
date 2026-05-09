@@ -1,0 +1,102 @@
+<ion-content class="search-content">
+
+  <!-- ===== GREEN TOP SECTION ===== -->
+  <div class="top-section">
+
+    <!-- Header Row -->
+    <div class="header-row">
+      <div class="icon-btn">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </div>
+      <span class="header-title">Search</span>
+      <div class="icon-btn bell-btn">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar-wrapper">
+      <ion-icon name="search-outline" class="search-icon"></ion-icon>
+      <input type="text" class="search-input" placeholder="Search..." />
+    </div>
+
+  </div>
+
+  <!-- ===== WHITE BOTTOM SECTION ===== -->
+  <div class="bottom-section">
+
+    <!-- Categories -->
+    <div class="field-group">
+      <span class="field-label">Categories</span>
+      <div class="dropdown-wrapper">
+    
+        <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+
+
+      </div>
+    </div>
+
+    <!-- Date -->
+    <div class="field-group">
+      <span class="field-label">Date</span>
+      <div class="date-wrapper">
+        <input type="text" class="date-input" value="30 / APR / 2023" readonly />
+        <div class="date-icon-btn">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report -->
+    <div class="field-group">
+      <span class="field-label report-label">Report</span>
+      <div class="radio-row">
+
+        <!-- Income -->
+        <label class="radio-item">
+          <input type="radio" name="report" value="income" />
+          <div class="radio-circle"></div>
+          <span class="radio-text">Income</span>
+        </label>
+
+        <!-- Expense -->
+        <label class="radio-item">
+          <input type="radio" name="report" value="expense" checked />
+          <div class="radio-circle checked"></div>
+          <span class="radio-text">Expense</span>
+        </label>
+
+      </div>
+    </div>
+
+    <!-- Search Button -->
+    <div class="btn-wrapper">
+      <button class="search-btn">Search</button>
+    </div>
+
+  </div>
+
+</ion-content>
+
+
+
+
+<ion-footer class="floating-footer">
+  <div class="nav-item nav-item--active">
+    <div class="nav-active-bg">
+      <ion-icon name="home-outline"></ion-icon>
+    </div>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="bar-chart-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="swap-horizontal-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="layers-outline"></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="person-outline"></ion-icon>
+  </div>
+</ion-footer>

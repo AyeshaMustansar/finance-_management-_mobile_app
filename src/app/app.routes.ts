@@ -42,5 +42,29 @@ export const routes: Routes = [
     path: 'transaction',
     loadComponent: () => import('./transaction/transaction.page').then( m => m.TransactionPage)
   },
+  {
+    path: 'bottomnavigation',
+    loadComponent: () => import('./bottomnavigation/bottomnavigation.page').then( m => m.BottomnavigationPage)
+  },
+  {
+    path: 'daily',
+    loadComponent: () => import('./daily/daily.page').then( m => m.DailyPage)
+  },
+  {
+    path: 'weekly',
+    loadComponent: () => import('./weekly/weekly.page').then( m => m.WeeklyPage)
+  },
+  {
+    path: 'monthly',
+    loadComponent: () => import('./monthly/monthly.page').then( m => m.MonthlyPage)
+  },
+  {
+    path: 'yearly',
+    loadComponent: () => import('./yearly/yearly.page').then( m => m.YearlyPage)
+  },
+  {
+    path: 'search',
+    loadComponent: () => import('./search/search.page').then( m => m.SearchPage)
+  },
  
 ];

@@ -3,35 +3,35 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { arrowBackOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, restaurantOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
+import { arrowDownOutline, arrowUpOutline, barChartOutline, calendarOutline, cardOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-transaction',
-  templateUrl: './transaction.page.html',
-  styleUrls: ['./transaction.page.scss'],
+  selector: 'app-weekly',
+  templateUrl: './weekly.page.html',
+  styleUrls: ['./weekly.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class TransactionPage implements OnInit {
+export class WeeklyPage implements OnInit {
 
   constructor() { 
     addIcons({
-      arrowBackOutline,
-      notificationsOutline,
-      personOutline,
+      homeOutline,
       layersOutline,
       swapHorizontalOutline,
       barChartOutline,
-      homeOutline,
-      restaurantOutline,
-      busOutline,
-      basketOutline,
-      cashOutline,
-      checkboxOutline,
+      personOutline,
       cardOutline,
+      arrowDownOutline,
+      arrowUpOutline,
+      searchOutline,
       walletOutline,
+      notificationsOutline,
       chevronBackOutline,
+      checkboxOutline,
+      calendarOutline,
+
     })
   }
 

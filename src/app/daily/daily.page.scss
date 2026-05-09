@@ -1,0 +1,484 @@
+// ── Content ────────────────────────────────────────────────
+.analysis2-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+// ── Main wrapper ───────────────────────────────────────────
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: 52px 20px 80px;
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: 20px; }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── Stats Row ──────────────────────────────────────────────
+.stats-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.stat-icon {
+  font-size: 16px;
+  color: #000000;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.stat-amount {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0068FF;
+
+  &--dark {
+    color: #1a1f2e;
+  }
+}
+
+.stats-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.50);
+  margin: 0 12px;
+  flex-shrink: 0;
+}
+
+// ── Progress Bar ───────────────────────────────────────────
+.progress-wrap {
+  margin-bottom: 14px;
+}
+
+.progress-bar-outer {
+  background: #000;
+  border-radius: 66px;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+.progress-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.progress-bar-inner {
+  border-radius: 36px;
+  height: 100%;
+  width: 81%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 14px;
+  box-sizing: border-box;
+  margin-left: auto;
+  background-color: #ffffff;
+
+  .progress-amount {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+  }
+}
+
+// ── Note Row ───────────────────────────────────────────────
+.note-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  .note-icon {
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .note-text {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: 20px 16px 40px;
+  flex: 1;
+}
+
+// ── Tab Bar ────────────────────────────────────────────────
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #dff7f0;
+  border-radius: 50px;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1f2e;
+  padding: 10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &--active {
+    background: #2ECFB0;
+    color: #ffffff;
+  }
+}
+
+// ── Expenses Card ──────────────────────────────────────────
+.expenses-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 18px 16px;
+}
+
+.expenses-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.expenses-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.expenses-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+  background: #2ECFB0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 16px;
+    color: #000000;
+  }
+}
+
+// ── Chart ──────────────────────────────────────────────────
+.chart-wrap {
+  position: relative;
+}
+
+.chart-inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.y-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+}
+
+.y-label {
+  font-size: 10px;
+  color: #a0aab8;
+  width: 26px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.y-line {
+  flex: 1;
+  height: 1px;
+  border-top: 1px dashed #d0d8e4;
+}
+
+// ── Bars ───────────────────────────────────────────────────
+.bars-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-left: 32px;
+  margin-top: -112px;
+  height: 112px;
+  gap: 4px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.bar-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.bar {
+  width: 7px;
+  border-radius: 4px 4px 0 0;
+
+  &--blue  { background: #0068FF; }
+  &--green { background: #2ECFB0; }
+}
+
+.bar-label {
+  font-size: 9px;
+  color: #a0aab8;
+  text-align: center;
+  white-space: nowrap;
+}
+
+// ── Income / Expense Cards ─────────────────────────────────
+.ie-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.ie-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ie-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &--teal { background: #2ECFB0; }
+  &--blue { background: #0068FF; }
+}
+
+.ie-label {
+  font-size: 13px;
+  color: #a0aab8;
+  font-weight: 500;
+}
+
+.ie-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+// ── Section Label ──────────────────────────────────────────
+.section-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1f2e;
+  margin-bottom: 14px;
+}
+
+// ── Targets Row ────────────────────────────────────────────
+.targets-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.target-card {
+  flex: 1;
+  background: #7EC8E3;
+  border-radius: 24px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.target-circle-wrap {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.target-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.target-percent {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.target-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

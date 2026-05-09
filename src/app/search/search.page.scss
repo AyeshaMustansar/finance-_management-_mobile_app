@@ -1,0 +1,273 @@
+// ===== CONTENT BACKGROUND =====
+.search-content {
+  --background: #f0faf5;
+}
+
+// ===== GREEN TOP SECTION =====
+.top-section {
+  background: #2ecc8f;
+  padding-bottom: 20px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px 16px 20px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 22px;
+    color: white;
+  }
+}
+
+.bell-btn {
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a6b47;
+}
+
+// Search Bar
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 30px;
+  margin: 0 20px;
+  padding: 10px 16px;
+  gap: 10px;
+
+  .search-icon {
+    font-size: 18px;
+    color: #aaaaaa;
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #333333;
+    width: 100%;
+
+    &::placeholder {
+      color: #aaaaaa;
+    }
+  }
+}
+
+// ===== WHITE BOTTOM SECTION =====
+.bottom-section {
+  background: #f0faf5;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+// Field Group
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+}
+
+// Dropdown
+.dropdown-wrapper {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+
+  .dropdown-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #aaaaaa;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    color: #aaaaaa;
+    pointer-events: none;
+  }
+}
+
+// Date
+.date-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .date-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #222222;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .date-icon-btn {
+    width: 34px;
+    height: 34px;
+    background: #2ecc8f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    ion-icon {
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}
+
+// Report Radio
+.report-label {
+  color: #2ecc8f;
+  font-weight: 700;
+}
+
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .radio-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #cccccc;
+    background: transparent;
+
+    &.checked {
+      border: 6px solid #2ecc8f;
+      background: #ffffff;
+    }
+  }
+
+  .radio-text {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 500;
+  }
+}
+
+// Search Button
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search-btn {
+  background: #2ecc8f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 60px;
+  
+  letter-spacing: 0.5px;
+
+  
+}
+
+
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
