@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { arrowBackOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, restaurantOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
+import { arrowBackOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, restaurantOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -32,6 +32,7 @@ export class TransactionPage implements OnInit {
       cardOutline,
       walletOutline,
       chevronBackOutline,
+      searchOutline,
     })
   }
 

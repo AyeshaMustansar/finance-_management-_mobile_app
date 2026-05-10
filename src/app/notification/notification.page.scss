@@ -101,11 +101,11 @@
   }
 
   &.icon-green {
-    background: linear-gradient(135deg, #4cd48a, #28b96a);
+    background: linear-gradient(135deg, #2ECFB0, #2ECFB0);
   }
 
   &.icon-orange {
-    background: linear-gradient(135deg, #ffb347, #e07b20);
+    background: linear-gradient(135deg, #2ECFB0,#2ECFB0);
   }
 }
 
@@ -126,7 +126,7 @@
 
 .notif-desc {
   font-size: 12px;
-  color: #8a94a6;
+  color: black;
   line-height: 1.4;
 }
 
@@ -145,7 +145,7 @@
   }
 
   .tag-red {
-    color: #ff5e6c;
+    color: 00D09E;
   }
 
   .tag-sep {
@@ -157,7 +157,7 @@
 
 .notif-time {
   font-size: 11px;
-  color: #b0b8c1;
+  color: #0068ff;
   text-align: right;
   margin-top: 4px;
 }
@@ -171,20 +171,21 @@
   opacity: 0.35;
 }
 
-// ── Footer ─────────────────────────────────────────────────
-.footer-wrap {
-  --background: transparent;
-  background: transparent;
-  padding: 0;
-}
 
-.bottom-nav {
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: #dff7f0;
-  border-radius: 28px 28px 0 0;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
   padding: 14px 16px 20px;
   width: 100%;
 }

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { arrowDown, arrowDownOutline, arrowUp, arrowUpOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
+import { arrowDown, arrowDownOutline, arrowUp, arrowUpOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -32,7 +32,7 @@ export class AccountbalancePage implements OnInit {
      swapHorizontalOutline,
      layersOutline,
      personOutline,
-     
+     searchOutline,
 
     })
   }

@@ -3,34 +3,34 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { barChartOutline, cashOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, shieldCheckmarkOutline, swapHorizontalOutline, trendingDownOutline } from 'ionicons/icons';
+import { barChartOutline, basketOutline, cashOutline, chevronBackOutline, chevronDownOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline } from 'ionicons/icons';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-notification',
-  templateUrl: './notification.page.html',
-  styleUrls: ['./notification.page.scss'],
+  selector: 'app-calenderspend',
+  templateUrl: './calenderspend.page.html',
+  styleUrls: ['./calenderspend.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class NotificationPage implements OnInit {
+export class CalenderspendPage implements OnInit {
 
-  constructor() {
+  constructor() { 
     addIcons({
-      notificationsOutline,
-      cashOutline,
-      shieldCheckmarkOutline,
       chevronBackOutline,
-      trendingDownOutline,
+      notificationsOutline,
+      chevronDownOutline,
+      basketOutline,
+      cashOutline,
       personOutline,
-      layersOutline,
       swapHorizontalOutline,
       barChartOutline,
+      layersOutline,
       homeOutline,
       searchOutline,
-
+      
     })
-   }
+  }
 
   ngOnInit() {
   }

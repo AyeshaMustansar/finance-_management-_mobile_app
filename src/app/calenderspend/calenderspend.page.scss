@@ -1,0 +1,309 @@
+// ── Content ────────────────────────────────────────────────
+.calendar-content {
+  --background: white;
+  --padding-top: 0;
+  --padding-bottom: 100px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: 52px 20px 70px;
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: 20px; }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #ffffff;
+  border-radius: 49px 49px 0 0;
+  margin-top: -36px;
+  padding: 24px 16px 40px;
+  flex: 1;
+}
+
+// ── Calendar Header ────────────────────────────────────────
+.cal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cal-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 16px;
+    color: #1a1f2e;
+  }
+}
+
+.cal-dropdown-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+// ── Days Header ────────────────────────────────────────────
+.cal-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+
+  span {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a0aab8;
+    padding: 4px 0;
+  }
+}
+
+// ── Calendar Grid ──────────────────────────────────────────
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-cell {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1f2e;
+  padding: 10px 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--empty {
+    visibility: hidden;
+  }
+
+  &--active {
+    background: #2ECFB0;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &:hover {
+    background: #f0faf7;
+  }
+}
+
+// ── Tab Bar ────────────────────────────────────────────────
+.tab-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #dff7f0;
+  border-radius: 50px;
+  padding: 4px;
+  margin: 20px 0 16px;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1f2e;
+  padding: 10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &--active {
+    background: #2ECFB0;
+    color: #ffffff;
+  }
+}
+
+// ── Transaction List ───────────────────────────────────────
+.txn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.txn-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
+
+.txn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.txn-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-date {
+  font-size: 11px;
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.txn-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  width: 150px;
+}
+
+.txn-divider {
+  width: 2px;
+  height: 28px;
+  background: #00D09E;
+  border-radius: 2px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.txn-tag {
+  font-size: 12px;
+  color: #1a1f2e;
+  font-weight: 500;
+  flex-shrink: 0;
+  width: 58px;
+  text-align: center;
+  align-self: center;
+}
+
+.txn-amount {
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 58px;
+  text-align: right;
+
+  &--dark { color: #1a1f2e; }
+  &--red  { color: #ff5e6c; }
+}
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
+
+

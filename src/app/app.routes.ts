@@ -66,5 +66,11 @@ export const routes: Routes = [
     path: 'search',
     loadComponent: () => import('./search/search.page').then( m => m.SearchPage)
   },
+  {
+    path: 'calenderspend',
+    loadComponent: () => import('./calenderspend/calenderspend.page').then( m => m.CalenderspendPage)
+  },
+  
+
  
 ];
