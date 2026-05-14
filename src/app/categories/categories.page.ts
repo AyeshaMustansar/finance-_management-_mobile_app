@@ -9,8 +9,16 @@ import {
   notificationsOutline,
   arrowUpOutline,
   arrowDownOutline,
-  cashOutline,
-  ellipsisHorizontalOutline,
+  checkboxOutline,
+  restaurantOutline,
+  busOutline,
+  medkitOutline,
+  basketOutline,
+
+  giftOutline,
+  walletOutline,
+  ticketOutline,
+  addOutline,
   homeOutline,
   searchOutline,
   swapHorizontalOutline,
@@ -19,14 +27,14 @@ import {
 } from 'ionicons/icons';
 
 @Component({
-  selector: 'app-transitionincomee',
-  templateUrl: './transitionincomee.page.html',
-  styleUrls: ['./transitionincomee.page.scss'],
+  selector: 'app-categories',
+  templateUrl: './categories.page.html',
+  styleUrls: ['./categories.page.scss'],
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class TransitionincomeePage implements OnInit {
+export class CategoriesPage implements OnInit {
 
   constructor() {
     addIcons({
@@ -34,9 +42,16 @@ export class TransitionincomeePage implements OnInit {
       notificationsOutline,
       arrowUpOutline,
       arrowDownOutline,
-      cashOutline,
-      ellipsisHorizontalOutline,
+      checkboxOutline,
+      restaurantOutline,
+      busOutline,
+      medkitOutline,
+      basketOutline,
       homeOutline,
+      giftOutline,
+      walletOutline,
+      ticketOutline,
+      addOutline,
       searchOutline,
       swapHorizontalOutline,
       layersOutline,

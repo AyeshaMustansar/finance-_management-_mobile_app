@@ -1,4 +1,3 @@
-// ── Content ────────────────────────────────────────────────
 .transaction2-content {
   --background: #f0faf7;
   --padding-top: 0;
@@ -7,20 +6,17 @@
   --padding-end: 0;
 }
 
-// ── Main wrapper ───────────────────────────────────────────
 .main-content {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-// ── Top teal section ───────────────────────────────────────
 .top-section {
   background: #2ECFB0;
   padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(60px, 12vw, 90px);
 }
 
-// ── Navbar ─────────────────────────────────────────────────
 .navbar-row {
   display: flex;
   align-items: center;
@@ -56,7 +52,6 @@
   color: #0068FF;
 }
 
-// ── Total Balance Card ─────────────────────────────────────
 .balance-card {
   background: #ffffff;
   border-radius: clamp(16px, 4vw, 22px);
@@ -78,7 +73,7 @@
   }
 }
 
-// ── Income / Expense Row ───────────────────────────────────
+
 .ie-row {
   display: flex;
   gap: clamp(10px, 3vw, 16px);
@@ -117,11 +112,11 @@
 
   ion-icon {
     font-size: clamp(18px, 4.5vw, 22px);
-    color: #ffffff;
+    color:black;
   }
 
   &.ie-icon--teal { background: #2ECFB0; }
-  &.ie-icon--blue { background: #0068FF; }
+
 }
 
 .ie-label {
@@ -148,7 +143,6 @@
   gap: 10px;
 }
 
-// ── Month Header ───────────────────────────────────────────
 .month-header {
   display: flex;
   align-items: center;
@@ -169,7 +163,6 @@
   }
 }
 
-// ── Transaction Card ───────────────────────────────────────
 .transaction-card {
 
   border-radius: 16px;
@@ -233,5 +226,54 @@
 
     &.positive { color: #2ECFB0; }
     &.negative { color: #ff4d4d; }
+  }
+}
+
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
   }
 }

@@ -1,0 +1,343 @@
+// ── Content ────────────────────────────────────────────────
+.rent-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 100px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(60px, 12vw, 90px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(16px, 4vw, 28px);
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── Stats Row ──────────────────────────────────────────────
+.stats-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: clamp(12px, 3vw, 16px);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.stat-icon {
+  font-size: clamp(14px, 3.5vw, 18px);
+  color: #000000;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-label {
+  font-size: clamp(10px, 2.5vw, 12px);
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.stat-amount {
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #0068FF;
+
+  &--dark { color: #1a1f2e; }
+}
+
+.stats-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.50);
+  margin: 0 12px;
+  flex-shrink: 0;
+}
+
+// ── Progress Bar ───────────────────────────────────────────
+.progress-wrap {
+  margin-bottom: clamp(10px, 2.5vw, 14px);
+}
+
+.progress-bar-outer {
+  background: #000;
+  border-radius: 66px;
+  height: clamp(28px, 7vw, 34px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.progress-label {
+  font-size: clamp(11px, 2.8vw, 14px);
+  font-weight: 700;
+  color: #ffffff;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.progress-bar-inner {
+  border-radius: 36px;
+  height: 100%;
+  width: 81%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+  box-sizing: border-box;
+  margin-left: auto;
+  background-color: #ffffff;
+
+  .progress-amount {
+    font-size: clamp(11px, 2.8vw, 14px);
+    font-weight: 700;
+    color: #000000;
+  }
+}
+
+// ── Note Row ───────────────────────────────────────────────
+.note-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  .note-icon {
+    font-size: clamp(15px, 3.8vw, 19px);
+    color: #000000;
+  }
+
+  .note-text {
+    font-size: clamp(11px, 2.8vw, 14px);
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: clamp(20px, 5vw, 28px) clamp(14px, 4vw, 20px) 40px;
+  flex: 1;
+}
+
+// ── Section Header ─────────────────────────────────────────
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.section-label {
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #1a1f2e;
+
+  &--gap {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+.filter-btn {
+  width: 34px;
+  height: 34px;
+  background: #2ECFB0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+
+// ── Transaction List ───────────────────────────────────────
+.txn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(10px, 2.5vw, 14px);
+  border-radius: clamp(12px, 3vw, 16px);
+  padding: clamp(12px, 3vw, 16px);
+
+}
+
+.txn-icon-wrap {
+  width: clamp(40px, 10vw, 50px);
+  height: clamp(40px, 10vw, 50px);
+  border-radius: clamp(10px, 2.5vw, 14px);
+  background: #3299FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: clamp(20px, 5vw, 26px);
+    color: #ffffff;
+  }
+}
+
+.txn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.txn-name {
+  font-size: clamp(13px, 3.2vw, 15px);
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-date {
+  font-size: clamp(10px, 2.5vw, 12px);
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.txn-amount {
+  font-size: clamp(13px, 3.2vw, 15px);
+  font-weight: 700;
+  color: #1a1f2e;
+  flex-shrink: 0;
+}
+
+// ── Add Button ─────────────────────────────────────────────
+.add-btn {
+  background: #2ECFB0;
+  border-radius: 50px;
+  padding: clamp(12px, 3vw, 16px);
+  text-align: center;
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 24px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media (min-width: 600px) { width: 320px; }
+  @media (min-width: 900px) { width: 280px; }
+
+  &:hover { background: #25b89c; }
+}
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,325 @@
+// ── Content ────────────────────────────────────────────────
+.transaction3-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(60px, 12vw, 90px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(16px, 4vw, 28px);
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── Total Balance Card ─────────────────────────────────────
+.balance-card {
+  background: #ffffff;
+  border-radius: clamp(14px, 3.5vw, 20px);
+  padding: clamp(14px, 3.5vw, 22px);
+  text-align: center;
+  margin-bottom: clamp(12px, 3vw, 16px);
+
+  &__label {
+    font-size: clamp(11px, 3vw, 14px);
+    color: #a0aab8;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  &__amount {
+    font-size: clamp(26px, 7vw, 36px);
+    font-weight: 700;
+    color: #1a1f2e;
+  }
+}
+
+// ── Income / Expense Row ───────────────────────────────────
+.ie-row {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(10px, 3vw, 16px);
+}
+
+.ie-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: clamp(14px, 3.5vw, 20px);
+  padding: clamp(14px, 3.5vw, 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(6px, 1.5vw, 10px);
+
+  &--blue {
+    background: #0068FF;
+  }
+}
+
+.ie-icon-wrap {
+  width: clamp(34px, 8.5vw, 44px);
+  height: clamp(34px, 8.5vw, 44px);
+  border-radius: clamp(10px, 2.5vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: clamp(16px, 4vw, 22px);
+    color: #ffffff;
+  }
+
+  &.ie-icon--teal {
+    background: #2ECFB0;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.ie-icon--white {
+    background: rgba(255, 255, 255, 0.25);
+    ion-icon { color: #ffffff; }
+  }
+}
+
+.ie-label {
+  font-size: clamp(11px, 3vw, 14px);
+  color: #a0aab8;
+  font-weight: 500;
+
+  &--white { color: rgba(255, 255, 255, 0.85); }
+}
+
+.ie-amount {
+  font-size: clamp(15px, 4vw, 20px);
+  font-weight: 700;
+  color: #1a1f2e;
+
+  &--white { color: #ffffff; }
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: clamp(16px, 4vw, 24px) clamp(14px, 4vw, 20px) 40px;
+  flex: 1;
+}
+
+// ── Section Header ─────────────────────────────────────────
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-label {
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #1a1f2e;
+
+  &--gap {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.filter-btn {
+  width: 34px;
+  height: 34px;
+  background: #2ECFB0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+
+// ── Transaction List ───────────────────────────────────────
+.txn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(8px, 2vw, 12px);
+  border-radius: clamp(12px, 3vw, 16px);
+  padding: clamp(10px, 2.5vw, 14px);
+}
+
+.txn-icon-wrap {
+  width: clamp(38px, 9.5vw, 46px);
+  height: clamp(38px, 9.5vw, 46px);
+  border-radius: clamp(10px, 2.5vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: clamp(18px, 4.5vw, 22px);
+    color: #ffffff;
+  }
+}
+
+.txn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.txn-name {
+  font-size: clamp(13px, 3.2vw, 15px);
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.txn-date {
+  font-size: clamp(10px, 2.5vw, 12px);
+  color: #0068FF;
+  font-weight: 500;
+}
+
+.txn-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(4px, 1.5vw, 8px);
+  flex-shrink: 0;
+  width: clamp(120px, 35vw, 160px);
+}
+
+.txn-divider {
+  width: 2px;
+  height: 26px;
+  background: #00D09E;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.txn-tag {
+  font-size: clamp(10px, 2.8vw, 13px);
+  color: #1a1f2e;
+  font-weight: 500;
+  flex-shrink: 0;
+  width: clamp(44px, 12vw, 60px);
+  text-align: center;
+}
+
+.txn-amount {
+  font-size: clamp(11px, 3vw, 14px);
+  font-weight: 700;
+  color: #1a1f2e;
+  width: clamp(50px, 13vw, 65px);
+  text-align: right;
+}
+
+
+
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

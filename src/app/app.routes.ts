@@ -82,6 +82,43 @@ export const routes: Routes = [
     path: 'trnasitionexpense',
     loadComponent: () => import('./trnasitionexpense/trnasitionexpense.page').then( m => m.TrnasitionexpensePage)
   },
+  {
+    path: 'expense',
+    loadComponent: () => import('./expense/expense.page').then( m => m.ExpensePage)
+  },
+  {
+    path: 'categories',
+    loadComponent: () => import('./categories/categories.page').then( m => m.CategoriesPage)
+  },
+  {
+    path: 'food',
+    loadComponent: () => import('./food/food.page').then( m => m.FoodPage)
+  },
+
+  {
+    path: 'transport',
+    loadComponent: () => import('./transport/transport.page').then( m => m.TransportPage)
+  },
+  {
+    path: 'groceries',
+    loadComponent: () => import('./groceries/groceries.page').then( m => m.GroceriesPage)
+  },
+  {
+    path: 'rent',
+    loadComponent: () => import('./rent/rent.page').then( m => m.RentPage)
+  },
+  {
+    path: 'medicine',
+    loadComponent: () => import('./medicine/medicine.page').then( m => m.MedicinePage)
+  },
+  {
+    path: 'entertainment',
+    loadComponent: () => import('./entertainment/entertainment.page').then( m => m.EntertainmentPage)
+  },
+  {
+    path: 'add-expense',
+    loadComponent: () => import('./add-expense/add-expense.page').then( m => m.AddExpensePage)
+  },
   
 
  
