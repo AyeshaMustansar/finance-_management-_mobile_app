@@ -70,6 +70,18 @@ export const routes: Routes = [
     path: 'calenderspend',
     loadComponent: () => import('./calenderspend/calenderspend.page').then( m => m.CalenderspendPage)
   },
+  {
+    path: 'transactionincome',
+    loadComponent: () => import('./transactionincome/transactionincome.page').then( m => m.TransactionincomePage)
+  },
+  {
+    path: 'transitionincomee',
+    loadComponent: () => import('./transitionincomee/transitionincomee.page').then( m => m.TransitionincomeePage)
+  },
+  {
+    path: 'trnasitionexpense',
+    loadComponent: () => import('./trnasitionexpense/trnasitionexpense.page').then( m => m.TrnasitionexpensePage)
+  },
   
 
  

@@ -1,0 +1,237 @@
+// ── Content ────────────────────────────────────────────────
+.transaction2-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+// ── Main wrapper ───────────────────────────────────────────
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(60px, 12vw, 90px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(16px, 4vw, 28px);
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── Total Balance Card ─────────────────────────────────────
+.balance-card {
+  background: #ffffff;
+  border-radius: clamp(16px, 4vw, 22px);
+  padding: clamp(16px, 4vw, 24px);
+  text-align: center;
+  margin-bottom: clamp(12px, 3vw, 18px);
+
+  &__label {
+    font-size: clamp(11px, 3vw, 14px);
+    color: #a0aab8;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  &__amount {
+    font-size: clamp(26px, 7vw, 36px);
+    font-weight: 700;
+    color: #1a1f2e;
+  }
+}
+
+// ── Income / Expense Row ───────────────────────────────────
+.ie-row {
+  display: flex;
+  gap: clamp(10px, 3vw, 16px);
+}
+
+.ie-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: clamp(14px, 3.5vw, 20px);
+  padding: clamp(14px, 3.5vw, 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(6px, 1.5vw, 10px);
+}
+
+.ie-card--blue {
+  background: #0068FF;
+}
+
+.ie-plain-icon {
+  font-size: clamp(22px, 5.5vw, 28px);
+  color: #ffffff;
+}
+
+.ie-label--white { color: #ffffff; }
+.ie-amount--white { color: #ffffff; }
+
+.ie-icon-wrap {
+  width: clamp(36px, 9vw, 46px);
+  height: clamp(36px, 9vw, 46px);
+  border-radius: clamp(10px, 2.5vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: clamp(18px, 4.5vw, 22px);
+    color: #ffffff;
+  }
+
+  &.ie-icon--teal { background: #2ECFB0; }
+  &.ie-icon--blue { background: #0068FF; }
+}
+
+.ie-label {
+  font-size: clamp(11px, 3vw, 14px);
+  color: #a0aab8;
+  font-weight: 500;
+}
+
+.ie-amount {
+  font-size: clamp(15px, 4vw, 20px);
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+// ── White Bottom Section ───────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: clamp(16px, 4vw, 24px) clamp(14px, 4vw, 20px) 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+// ── Month Header ───────────────────────────────────────────
+.month-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 2px;
+
+  .month-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  .month-dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
+}
+
+// ── Transaction Card ───────────────────────────────────────
+.transaction-card {
+
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+// Icon Wrap
+.trans-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  &.teal   { background: #2ECFB0; }
+  &.blue   { background: #4a9eff; }
+  &.orange { background: #ff8c42; }
+  &.purple { background: #9b59b6; }
+  &.pink   { background: #e91e8c; }
+}
+
+// Details
+.trans-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+
+  .trans-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222222;
+  }
+
+  .trans-sub {
+    font-size: 11px;
+    color: #aaaaaa;
+    font-weight: 400;
+  }
+}
+
+// Right Amount
+.trans-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .trans-amount {
+    font-size: 15px;
+    font-weight: 700;
+
+    &.positive { color: #2ECFB0; }
+    &.negative { color: #ff4d4d; }
+  }
+}
