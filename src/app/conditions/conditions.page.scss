@@ -1,0 +1,223 @@
+// ── Content ────────────────────────────────────────────────
+.terms-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 100px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(50px, 10vw, 70px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: clamp(15px, 3.8vw, 18px);
+  font-weight: 700;
+  color: #1a1f2e;
+  text-align: center;
+  flex: 1;
+  padding: 0 8px;
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #ffffff;
+  border-radius: 28px 28px 0 0;
+  margin-top: -36px;
+  padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 28px) 40px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+// ── Terms Container ────────────────────────────────────────
+.terms-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 3vw, 16px);
+}
+
+// ── Heading ────────────────────────────────────────────────
+.terms-heading {
+  font-size: clamp(15px, 3.8vw, 18px);
+  font-weight: 700;
+  color: #1a1f2e;
+  line-height: 1.4;
+}
+
+// ── Paragraph ──────────────────────────────────────────────
+.terms-para {
+  font-size: clamp(12px, 3vw, 14px);
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+// ── Lists ──────────────────────────────────────────────────
+.terms-list {
+  padding-left: clamp(16px, 4vw, 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  li {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  &--numbered {
+    list-style: decimal;
+  }
+
+  &--bullet {
+    list-style: disc;
+  }
+}
+
+// ── Link ───────────────────────────────────────────────────
+.terms-link {
+  color: #2ECFB0;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+// ── Checkbox Row ───────────────────────────────────────────
+.terms-checkbox-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-wrap {
+  flex-shrink: 0;
+}
+
+.checkbox-icon {
+  font-size: 22px;
+  color: #2ECFB0;
+}
+
+.checkbox-label {
+  font-size: clamp(12px, 3vw, 14px);
+  color: #1a1f2e;
+  font-weight: 500;
+}
+
+// ── Accept Button ──────────────────────────────────────────
+.accept-btn {
+  background: #2ECFB0;
+  border-radius: 50px;
+  padding: clamp(12px, 3vw, 16px);
+  text-align: center;
+  font-size: clamp(14px, 3.5vw, 17px);
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media (min-width: 600px) { width: 320px; }
+  @media (min-width: 900px) { width: 280px; }
+
+  &:hover { background: #25b89c; }
+}
+
+
+
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+
+  &--active ion-icon { color: #2ECFB0; }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

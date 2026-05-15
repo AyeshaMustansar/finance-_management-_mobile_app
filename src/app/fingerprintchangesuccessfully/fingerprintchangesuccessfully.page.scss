@@ -1,0 +1,47 @@
+// ── Full green background ───────────────────────────────────
+.success-content {
+  --background: #00D09E;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+// ── Centered wrapper ───────────────────────────────────────
+.success-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 28px;
+}
+
+// ── Outer Circle ───────────────────────────────────────────
+.circle-outer {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #dff7E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ── Inner Dot ──────────────────────────────────────────────
+.circle-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+      margin-right: 63px;
+}
+
+// ── Success Text ───────────────────────────────────────────
+.success-text {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+}

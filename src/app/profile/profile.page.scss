@@ -1,0 +1,199 @@
+// ── Content ────────────────────────────────────────────────
+.profile-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 100px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(40px, 8vw, 60px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(20px, 5vw, 30px);
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+}
+
+.nav-btn-placeholder {
+  width: clamp(34px, 9vw, 42px);
+}
+
+.nav-title {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #0068FF;
+  margin-top: -33px;
+}
+
+// ── Avatar ─────────────────────────────────────────────────
+.avatar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: -45px;
+  margin-bottom: 10px;
+}
+
+.avatar-ring {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  overflow: hidden;
+  background: #cce8ff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.avatar-name {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.avatar-date {
+  font-size: clamp(11px, 2.8vw, 13px);
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+// ── White Section ──────────────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -24px;
+  padding: 0 clamp(14px, 4vw, 20px) 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+// ── Menu Item ──────────────────────────────────────────────
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+
+  border-radius: 16px;
+  padding: 14px 16px;
+  cursor: pointer;
+
+  &:active { opacity: 0.85; }
+}
+
+.menu-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  ion-icon {
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  &.teal { background: #3299FF; }
+}
+
+.menu-label {
+  font-size: clamp(14px, 3.5vw, 16px);
+  font-weight: 600;
+  color: #1a1f2e;
+  flex: 1;
+}
+
+.menu-arrow {
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+// ── Footer ─────────────────────────────────────────────────
+.floating-footer {
+  --background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #DFF7E2;
+  border-radius: 61px 61px 0 0;
+  padding: 14px 16px 20px;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 24px;
+    color: #1a2340;
+  }
+
+  &--active ion-icon { color: #2ECFB0; }
+}
+
+.nav-active-bg {
+  width: 46px;
+  height: 46px;
+  background: #2ECFB0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

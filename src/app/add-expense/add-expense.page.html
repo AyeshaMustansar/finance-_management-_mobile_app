@@ -1,6 +1,7 @@
 <ion-content class="add-expenses-content">
   <div class="main-content">
 
+    <!-- GREEN TOP SECTION -->
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
@@ -13,52 +14,49 @@
       </div>
     </div>
 
+    <!-- WHITE SECTION -->
     <div class="white-section">
       <div class="form-container">
 
-     
+        <!-- Date -->
         <div class="field-group">
           <div class="field-label">Date</div>
-          <div class="field-input">
-            <span class="field-value">April 30 ,2024</span>
+          <div class="input-wrap">
+            <input type="text" class="field-input" placeholder="April 30, 2024" />
             <div class="field-toggle">
               <ion-icon name="ellipse" class="toggle-dot"></ion-icon>
             </div>
           </div>
         </div>
 
-      
+        <!-- Category -->
         <div class="field-group">
           <div class="field-label">Category</div>
-          <div class="field-input">
-            <span class="field-placeholder">Select the category</span>
+          <div class="input-wrap">
+            <input type="text" class="field-input" placeholder="Select the category" />
             <ion-icon name="chevron-down-outline" class="field-icon"></ion-icon>
           </div>
         </div>
 
-                <div class="field-group">
+        <!-- Amount -->
+        <div class="field-group">
           <div class="field-label">Amount</div>
-          <div class="field-input">
-            <span class="field-value">$26,00</span>
-          </div>
+          <input type="text" class="field-input field-input--solo" placeholder="$0.00" />
         </div>
 
-  
+        <!-- Expense Title -->
         <div class="field-group">
           <div class="field-label">Expense Title</div>
-          <div class="field-input">
-            <span class="field-value">Dinner</span>
-          </div>
+          <input type="text" class="field-input field-input--solo" placeholder="Enter title" />
         </div>
 
-       
+        <!-- Enter Message -->
         <div class="field-group">
-          <div class="field-textarea">
-            <span class="field-placeholder">Enter Message</span>
-          </div>
+          <div class="field-label">Message</div>
+          <textarea class="field-textarea" placeholder="Enter Message"></textarea>
         </div>
 
-     
+        <!-- Save Button -->
         <div class="save-btn">Save</div>
 
       </div>
@@ -66,3 +64,32 @@
 
   </div>
 </ion-content>
+
+
+
+
+
+
+<ion-footer class="floating-footer">
+  <div class="nav-item nav-item--active">
+   
+      <ion-icon name="home-outline"></ion-icon>
+  
+  </div>
+  <div class="nav-item">
+    <ion-icon name="search-outline"></ion-icon>
+  </div>
+  
+  <div class="nav-item">
+    <ion-icon name="swap-horizontal-outline"></ion-icon>
+
+  </div>
+   <div class="nav-active-bg">
+  <div class="nav-item">
+    <ion-icon name="layers-outline"></ion-icon>
+  </div>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="person-outline"></ion-icon>
+  </div>
+</ion-footer>

@@ -1,0 +1,161 @@
+// ── Content ────────────────────────────────────────────────
+.travel-content {
+  --background: #f0faf7;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(30px, 6vw, 50px);
+}
+
+// ── Navbar ─────────────────────────────────────────────────
+.navbar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(20px, 5vw, 32px);
+}
+
+.nav-btn {
+  width: clamp(34px, 9vw, 42px);
+  height: clamp(34px, 9vw, 42px);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
+
+  &.nav-btn--back {
+    background: transparent;
+    ion-icon { color: #ffffff; }
+  }
+
+  &.nav-btn--bell {
+    background: #ffffff;
+    ion-icon { color: #1a1f2e; }
+  }
+}
+
+.nav-title {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 700;
+  color: #0068FF;
+}
+
+// ── Hero Row ───────────────────────────────────────────────
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ── Left Stats ─────────────────────────────────────────────
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-stat-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  .label-icon {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  span {
+    font-size: clamp(11px, 2.8vw, 13px);
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+.hero-stat-amount {
+  font-size: clamp(22px, 6vw, 28px);
+  font-weight: 700;
+  color: #ffffff;
+  padding-left: 20px;
+
+  &--blue { color: #0068FF; }
+}
+
+// ── Circle Right ───────────────────────────────────────────
+.circle-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+// Outer light circle SVG - centered
+.circle-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+}
+
+// Blue arc SVG - left side overlay
+.circle-arc {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 78px;
+  z-index: 2;
+}
+
+// Inner blue circle with icon
+.circle-inner {
+  width: 90px;
+  height: 90px;
+  background: #0068FF;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  z-index: 1;
+
+  .circle-icon {
+    font-size: 28px;
+    color: #ffffff;
+  }
+
+  .circle-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+  }
+}

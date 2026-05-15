@@ -1,7 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import {
   IonContent,
   IonHeader,
@@ -14,20 +13,25 @@ import { addIcons } from 'ionicons';
 import {
   chevronBackOutline,
   notificationsOutline,
-  chevronDownOutline,
-  ellipse,
-  swapHorizontalOutline,
-  personOutline,
+  searchOutline,
+  headsetOutline,
+  globeOutline,
+  chevronForwardOutline,
+  logoFacebook,
+  logoWhatsapp,
+  logoInstagram,
   homeOutline,
+  statsChartOutline,
+  swapHorizontalOutline,
   layersOutline,
-  searchOutline
+  personOutline
 } from 'ionicons/icons';
 
 @Component({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-add-expense',
-  templateUrl: './add-expense.page.html',
-  styleUrls: ['./add-expense.page.scss'],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  selector: 'app-contact-us',
+  templateUrl: './contact-us.page.html',
+  styleUrls: ['./contact-us.page.scss'],
   standalone: true,
   imports: [
     IonContent,
@@ -38,21 +42,25 @@ import {
     FormsModule
   ]
 })
-export class AddExpensePage implements OnInit {
+export class ContactUsPage implements OnInit {
 
   constructor() {
 
     addIcons({
       chevronBackOutline,
       notificationsOutline,
-      chevronDownOutline,
-      ellipse,
-      swapHorizontalOutline,
-      personOutline,
-      homeOutline,
-      layersOutline,
       searchOutline,
-
+      headsetOutline,
+      globeOutline,
+      chevronForwardOutline,
+      logoFacebook,
+      logoWhatsapp,
+      logoInstagram,
+      homeOutline,
+      statsChartOutline,
+      swapHorizontalOutline,
+      layersOutline,
+      personOutline
     });
 
   }

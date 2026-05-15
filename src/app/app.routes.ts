@@ -119,6 +119,95 @@ export const routes: Routes = [
     path: 'add-expense',
     loadComponent: () => import('./add-expense/add-expense.page').then( m => m.AddExpensePage)
   },
+  {
+    path: 'savings',
+    loadComponent: () => import('./savings/savings.page').then( m => m.SavingsPage)
+  },
+  {
+    path: 'travelsavings',
+    loadComponent: () => import('./travelsavings/travelsavings.page').then( m => m.TravelsavingsPage)
+  },
+  {
+    path: 'profile',
+    loadComponent: () => import('./profile/profile.page').then( m => m.ProfilePage)
+  },
+  {
+    path: 'editprofile',
+    loadComponent: () => import('./editprofile/editprofile.page').then( m => m.EditprofilePage)
+  },
+  {
+    path: 'security',
+    loadComponent: () => import('./security/security.page').then( m => m.SecurityPage)
+  },
+  {
+    path: 'changepin',
+    loadComponent: () => import('./changepin/changepin.page').then( m => m.ChangepinPage)
+  },
+
+  {
+    path: 'pinchangesuccessfully',
+    loadComponent: () => import('./pinchangesuccessfully/pinchangesuccessfully.page').then( m => m.PinchangesuccessfullyPage)
+  },
+  {
+    path: 'fingerprint',
+    loadComponent: () => import('./fingerprint/fingerprint.page').then( m => m.FingerprintPage)
+  },
+  {
+    path: 'jhon-fingerprint',
+    loadComponent: () => import('./jhon-fingerprint/jhon-fingerprint.page').then( m => m.JhonFingerprintPage)
+  },
+  {
+    path: 'fingerprint-elaminate',
+    loadComponent: () => import('./fingerprint-elaminate/fingerprint-elaminate.page').then( m => m.FingerprintElaminatePage)
+  },
+  {
+    path: 'add-fingerprint',
+    loadComponent: () => import('./add-fingerprint/add-fingerprint.page').then( m => m.AddFingerprintPage)
+  },
+  {
+    path: 'fingerprintchangesuccessfully',
+    loadComponent: () => import('./fingerprintchangesuccessfully/fingerprintchangesuccessfully.page').then( m => m.FingerprintchangesuccessfullyPage)
+  },
+  {
+    path: 'conditions',
+    loadComponent: () => import('./conditions/conditions.page').then( m => m.ConditionsPage)
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/settings.page').then( m => m.SettingsPage)
+  },
+  {
+    path: 'notification-settings',
+    loadComponent: () => import('./notification-settings/notification-settings.page').then( m => m.NotificationSettingsPage)
+  },
+  {
+    path: 'paswordchange',
+    loadComponent: () => import('./paswordchange/paswordchange.page').then( m => m.PaswordchangePage)
+  },
+  {
+    path: 'paswordchangesuccessfully',
+    loadComponent: () => import('./paswordchangesuccessfully/paswordchangesuccessfully.page').then( m => m.PaswordchangesuccessfullyPage)
+  },
+  {
+    path: 'delete-account',
+    loadComponent: () => import('./delete-account/delete-account.page').then( m => m.DeleteAccountPage)
+  },
+  {
+    path: 'helpcenter',
+    loadComponent: () => import('./helpcenter/helpcenter.page').then( m => m.HelpcenterPage)
+  },
+  
+ 
+  {
+    path: 'contact-us',
+    loadComponent: () => import('./contact-us/contact-us.page').then( m => m.ContactUsPage)
+  },
+  {
+    path: 'online-support',
+    loadComponent: () => import('./online-support/online-support.page').then( m => m.OnlineSupportPage)
+  },
+
+ 
   
 
  

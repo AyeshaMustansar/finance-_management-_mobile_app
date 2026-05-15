@@ -14,20 +14,24 @@ import { addIcons } from 'ionicons';
 import {
   chevronBackOutline,
   notificationsOutline,
-  chevronDownOutline,
-  ellipse,
-  swapHorizontalOutline,
-  personOutline,
+  arrowUpOutline,
+  arrowDownOutline,
+  checkboxOutline,
+  airplaneOutline,
   homeOutline,
+  carOutline,
+  heartOutline,
+  searchOutline,
+  swapHorizontalOutline,
   layersOutline,
-  searchOutline
+  personOutline
 } from 'ionicons/icons';
 
 @Component({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-add-expense',
-  templateUrl: './add-expense.page.html',
-  styleUrls: ['./add-expense.page.scss'],
+  selector: 'app-savings',
+  templateUrl: './savings.page.html',
+  styleUrls: ['./savings.page.scss'],
   standalone: true,
   imports: [
     IonContent,
@@ -38,21 +42,24 @@ import {
     FormsModule
   ]
 })
-export class AddExpensePage implements OnInit {
+export class SavingsPage implements OnInit {
 
   constructor() {
 
     addIcons({
       chevronBackOutline,
       notificationsOutline,
-      chevronDownOutline,
-      ellipse,
-      swapHorizontalOutline,
-      personOutline,
+      arrowUpOutline,
+      arrowDownOutline,
+      checkboxOutline,
+      airplaneOutline,
       homeOutline,
-      layersOutline,
+      carOutline,
+      heartOutline,
       searchOutline,
-
+      swapHorizontalOutline,
+      layersOutline,
+      personOutline
     });
 
   }

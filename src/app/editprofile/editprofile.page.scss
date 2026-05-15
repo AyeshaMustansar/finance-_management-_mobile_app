@@ -1,8 +1,8 @@
 // ── Content ────────────────────────────────────────────────
-.add-expenses-content {
+.edit-profile-content {
   --background: #f0faf7;
   --padding-top: 0;
-  --padding-bottom: 0;
+  --padding-bottom: 100px;
   --padding-start: 0;
   --padding-end: 0;
 }
@@ -25,7 +25,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 clamp(8px, 2vw, 16px);
 }
 
 .nav-btn {
@@ -54,28 +53,69 @@
   font-size: clamp(16px, 4vw, 20px);
   font-weight: 700;
   color: #0068FF;
-  padding: 0 clamp(12px, 3vw, 20px);
+      margin-top: -40px;
 }
 
 // ── White Section ──────────────────────────────────────────
 .white-section {
   background: #f0faf7;
   border-radius: 28px 28px 0 0;
-  margin-top: -36px;
-  padding: clamp(20px, 5vw, 32px) 0 40px;
+  margin-top: -24px;
+  padding: 0 clamp(14px, 4vw, 20px) 40px;
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
 }
 
-// ── Form Container ─────────────────────────────────────────
-.form-container {
-  width: 100%;
-  max-width: 480px;
+// ── Avatar ─────────────────────────────────────────────────
+.avatar-wrap {
   display: flex;
   flex-direction: column;
-  gap: clamp(14px, 3.5vw, 20px);
-  padding: 0 clamp(20px, 6vw, 32px);
+  align-items: center;
+  gap: 6px;
+  margin-top: -45px;
+  margin-bottom: 4px;
+}
+
+.avatar-ring {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  overflow: hidden;
+  background: #cce8ff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.avatar-name {
+  font-size: clamp(15px, 3.8vw, 18px);
+  font-weight: 700;
+  color: #1a1f2e;
+  margin-top: 4px;
+}
+
+.avatar-date {
+  font-size: clamp(11px, 2.8vw, 13px);
+  color: #0068FF;
+  font-weight: 400;
+}
+
+// ── Section Label ──────────────────────────────────────────
+.section-label {
+  font-size: clamp(13px, 3.2vw, 15px);
+  font-weight: 700;
+  color: #0068FF;
+  margin-bottom: -4px;
+  width: 100%;
+  max-width: 360px;
 }
 
 // ── Field Group ────────────────────────────────────────────
@@ -83,121 +123,123 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: 100%;
+  max-width: 360px;
 }
 
 .field-label {
-  font-size: clamp(12px, 3vw, 14px);
-  font-weight: 700;
-  color: #1a1f2e;
+  font-size: clamp(11px, 2.8vw, 13px);
+  font-weight: 600;
+  color: #0068FF;
 }
 
-// ── Input Wrap (with icon/toggle) ──────────────────────────
-.input-wrap {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 50px;
-  padding: 0 clamp(14px, 3.5vw, 18px);
-  height: clamp(42px, 10vw, 50px);
+.field-input-wrap {
+  background: #DFF7E2;
+  border-radius: 14px;
+  padding: 12px 16px;
+  width: 100%;
 }
 
-// ── Inputs ─────────────────────────────────────────────────
 .field-input {
-  flex: 1;
   border: none;
   outline: none;
   background: transparent;
-  font-size: clamp(11px, 2.8vw, 13px);
-  color: #1a1f2e;
-
-  &::placeholder {
-    color: #a0aab8;
-    font-size: clamp(11px, 2.8vw, 13px);
-  }
-
-  &--solo {
-    width: 100%;
-    background: #ffffff;
-    border-radius: 50px;
-    padding: clamp(12px, 3vw, 14px) clamp(14px, 3.5vw, 18px);
-    height: clamp(42px, 10vw, 50px);
-    box-sizing: border-box;
-  }
-}
-
-// ── Icons inside input ─────────────────────────────────────
-.field-icon {
-  font-size: 16px;
-  color: #a0aab8;
-  flex-shrink: 0;
-}
-
-// ── Toggle ─────────────────────────────────────────────────
-.field-toggle {
-  width: 32px;
-  height: 18px;
-  background: #2ECFB0;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2px 3px;
-  flex-shrink: 0;
-
-  .toggle-dot {
-    font-size: 12px;
-    color: #ffffff;
-  }
-}
-
-// ── Textarea ───────────────────────────────────────────────
-.field-textarea {
-  background: #ffffff;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  padding: clamp(12px, 3vw, 16px) clamp(14px, 3.5vw, 18px);
-  min-height: clamp(90px, 22vw, 130px);
+  font-size: clamp(13px, 3.2vw, 15px);
+  color: #0068FF;
+  font-weight: 500;
   width: 100%;
-  box-sizing: border-box;
-  font-size: clamp(11px, 2.8vw, 13px);
-  color: #1a1f2e;
-  resize: none;
+  text-align: center;
 
   &::placeholder {
-    color: #a0aab8;
-    font-size: clamp(11px, 2.8vw, 13px);
+    color: #0068FF;
+    text-align: center;
   }
 }
+
+// ── Toggle Item ────────────────────────────────────────────
+.toggle-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 14px;
+  padding: 14px 16px;
+  width: 100%;
+  max-width: 360px;
+}
+
+
+.toggle-label {
+  font-size: clamp(13px, 3.2vw, 15px);
+  font-weight: 600;
+  color: #0068FF;
+}
+
+// Toggle Switch
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+  flex-shrink: 0;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #cccccc;
+    border-radius: 26px;
+    transition: 0.3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 3px;
+      bottom: 3px;
+      background: #ffffff;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+  }
+
+  input:checked + .toggle-slider {
+    background: #2ECFB0;
+  }
+
+  input:checked + .toggle-slider::before {
+    transform: translateX(20px);
+  }
+}
+
+
 
 // ── Save Button ────────────────────────────────────────────
 .save-btn {
   background: #2ECFB0;
   border-radius: 50px;
-  padding: clamp(12px, 3vw, 16px);
+  padding: 10px 20px;
   text-align: center;
-  font-size: clamp(14px, 3.5vw, 17px);
+  font-size: clamp(13px, 3vw, 15px);
   font-weight: 700;
   color: #ffffff;
   cursor: pointer;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
   margin-top: 8px;
+  width: 50%;
+  max-width: 200px;
 
-  @media (min-width: 600px) { width: 320px; }
-  @media (min-width: 900px) { width: 280px; }
-
-  &:hover { background: #25b89c; }
+  &:active { background: #25b89c; }
 }
 
-
-
-
-
-
+// ── Footer ─────────────────────────────────────────────────
 .floating-footer {
   --background: transparent;
   position: fixed;
@@ -227,6 +269,8 @@
     font-size: 24px;
     color: #1a2340;
   }
+
+  &--active ion-icon { color: #2ECFB0; }
 }
 
 .nav-active-bg {
@@ -243,8 +287,3 @@
     color: #ffffff;
   }
 }
-
-
-
-
-

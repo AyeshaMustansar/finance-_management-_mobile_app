@@ -1,8 +1,8 @@
 // ── Content ────────────────────────────────────────────────
-.add-expenses-content {
+.change-pin-content {
   --background: #f0faf7;
   --padding-top: 0;
-  --padding-bottom: 0;
+  --padding-bottom: 100px;
   --padding-start: 0;
   --padding-end: 0;
 }
@@ -25,7 +25,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 clamp(8px, 2vw, 16px);
 }
 
 .nav-btn {
@@ -54,150 +53,90 @@
   font-size: clamp(16px, 4vw, 20px);
   font-weight: 700;
   color: #0068FF;
-  padding: 0 clamp(12px, 3vw, 20px);
 }
 
 // ── White Section ──────────────────────────────────────────
 .white-section {
   background: #f0faf7;
   border-radius: 28px 28px 0 0;
-  margin-top: -36px;
-  padding: clamp(20px, 5vw, 32px) 0 40px;
+  margin-top: -24px;
+  padding: clamp(24px, 5vw, 32px) clamp(14px, 4vw, 20px) 40px;
   flex: 1;
   display: flex;
-  justify-content: center;
-}
-
-// ── Form Container ─────────────────────────────────────────
-.form-container {
-  width: 100%;
-  max-width: 480px;
-  display: flex;
   flex-direction: column;
-  gap: clamp(14px, 3.5vw, 20px);
-  padding: 0 clamp(20px, 6vw, 32px);
+  align-items: center;
+  gap: 16px;
 }
 
 // ── Field Group ────────────────────────────────────────────
 .field-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
 }
 
 .field-label {
-  font-size: clamp(12px, 3vw, 14px);
-  font-weight: 700;
-  color: #1a1f2e;
+  font-size: clamp(11px, 2.8vw, 13px);
+  font-weight: 600;
+  color: #0068FF;
 }
 
-// ── Input Wrap (with icon/toggle) ──────────────────────────
-.input-wrap {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.field-input-wrap {
   background: #ffffff;
-  border-radius: 50px;
-  padding: 0 clamp(14px, 3.5vw, 18px);
-  height: clamp(42px, 10vw, 50px);
+  border-radius: 14px;
+  padding: 12px 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-// ── Inputs ─────────────────────────────────────────────────
 .field-input {
-  flex: 1;
   border: none;
   outline: none;
   background: transparent;
-  font-size: clamp(11px, 2.8vw, 13px);
+  font-size: clamp(16px, 4vw, 20px);
   color: #1a1f2e;
-
-  &::placeholder {
-    color: #a0aab8;
-    font-size: clamp(11px, 2.8vw, 13px);
-  }
-
-  &--solo {
-    width: 100%;
-    background: #ffffff;
-    border-radius: 50px;
-    padding: clamp(12px, 3vw, 14px) clamp(14px, 3.5vw, 18px);
-    height: clamp(42px, 10vw, 50px);
-    box-sizing: border-box;
-  }
-}
-
-// ── Icons inside input ─────────────────────────────────────
-.field-icon {
-  font-size: 16px;
-  color: #a0aab8;
-  flex-shrink: 0;
-}
-
-// ── Toggle ─────────────────────────────────────────────────
-.field-toggle {
-  width: 32px;
-  height: 18px;
-  background: #2ECFB0;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2px 3px;
-  flex-shrink: 0;
-
-  .toggle-dot {
-    font-size: 12px;
-    color: #ffffff;
-  }
-}
-
-// ── Textarea ───────────────────────────────────────────────
-.field-textarea {
-  background: #ffffff;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  padding: clamp(12px, 3vw, 16px) clamp(14px, 3.5vw, 18px);
-  min-height: clamp(90px, 22vw, 130px);
+  font-weight: 600;
   width: 100%;
-  box-sizing: border-box;
-  font-size: clamp(11px, 2.8vw, 13px);
-  color: #1a1f2e;
-  resize: none;
+  text-align: center;
+  letter-spacing: 6px;
 
   &::placeholder {
-    color: #a0aab8;
-    font-size: clamp(11px, 2.8vw, 13px);
+    color: #aaaaaa;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 18px;
   }
+}
+
+.field-eye {
+  font-size: 20px;
+  color: #aaaaaa;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 // ── Save Button ────────────────────────────────────────────
 .save-btn {
   background: #2ECFB0;
   border-radius: 50px;
-  padding: clamp(12px, 3vw, 16px);
+  padding: 10px 20px;
   text-align: center;
-  font-size: clamp(14px, 3.5vw, 17px);
+  font-size: clamp(13px, 3vw, 15px);
   font-weight: 700;
-  color: #ffffff;
+  color: #0068FF;
   cursor: pointer;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
   margin-top: 8px;
+  width: 100%;
+  max-width: 200px;
 
-  @media (min-width: 600px) { width: 320px; }
-  @media (min-width: 900px) { width: 280px; }
-
-  &:hover { background: #25b89c; }
+  &:active { background: #25b89c; }
 }
 
-
-
-
-
-
+// ── Footer ─────────────────────────────────────────────────
 .floating-footer {
   --background: transparent;
   position: fixed;
@@ -243,8 +182,3 @@
     color: #ffffff;
   }
 }
-
-
-
-
-

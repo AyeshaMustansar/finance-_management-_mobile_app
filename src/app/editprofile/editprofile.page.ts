@@ -14,20 +14,18 @@ import { addIcons } from 'ionicons';
 import {
   chevronBackOutline,
   notificationsOutline,
-  chevronDownOutline,
-  ellipse,
-  swapHorizontalOutline,
-  personOutline,
   homeOutline,
+  searchOutline,
+  swapHorizontalOutline,
   layersOutline,
-  searchOutline
+  personOutline
 } from 'ionicons/icons';
 
 @Component({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-add-expense',
-  templateUrl: './add-expense.page.html',
-  styleUrls: ['./add-expense.page.scss'],
+  selector: 'app-editprofile',
+  templateUrl: './editprofile.page.html',
+  styleUrls: ['./editprofile.page.scss'],
   standalone: true,
   imports: [
     IonContent,
@@ -38,21 +36,18 @@ import {
     FormsModule
   ]
 })
-export class AddExpensePage implements OnInit {
+export class EditprofilePage implements OnInit {
 
   constructor() {
 
     addIcons({
       chevronBackOutline,
       notificationsOutline,
-      chevronDownOutline,
-      ellipse,
-      swapHorizontalOutline,
-      personOutline,
       homeOutline,
-      layersOutline,
       searchOutline,
-
+      swapHorizontalOutline,
+      layersOutline,
+      personOutline
     });
 
   }
