@@ -7,155 +7,346 @@
   --padding-end: 0;
 }
 
+// ── Main wrapper ───────────────────────────────────────────
 .main-content {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 // ── Top teal section ───────────────────────────────────────
 .top-section {
   background: #2ECFB0;
-  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) clamp(30px, 6vw, 50px);
+  height: 120px;
+  flex-shrink: 0;
+  position: relative;
 }
 
-// ── Navbar ─────────────────────────────────────────────────
+// ── Navbar row ─────────────────────────────────────────────
 .navbar-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: clamp(20px, 5vw, 32px);
+  position: absolute;
+  top: 52px;
+  left: 20px;
+  right: 20px;
 }
 
-.nav-btn {
-  width: clamp(34px, 9vw, 42px);
-  height: clamp(34px, 9vw, 42px);
-  border-radius: 100px;
+.back-btn {
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 
-  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
-
-  &.nav-btn--back {
-    background: transparent;
-    ion-icon { color: #ffffff; }
+  ion-icon {
+    font-size: 24px;
+    color: #1a1f2e;
   }
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
   &.nav-btn--bell {
-    background: #ffffff;
-    ion-icon { color: #1a1f2e; }
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+
+    ion-icon {
+      font-size: 18px;
+      color: #1a1f2e;
+    }
   }
 }
 
-.nav-title {
-  font-size: clamp(16px, 4vw, 20px);
-  font-weight: 700;
-  color: #0068FF;
+// ── White section ──────────────────────────────────────────
+.white-section {
+  background: #f0faf7;
+  border-radius: 28px 28px 0 0;
+  margin-top: -20px;
+  padding: 20px 16px 100px;
+  flex: 1;
 }
 
-// ── Hero Row ───────────────────────────────────────────────
+// ── Hero row ───────────────────────────────────────────────
 .hero-row {
+ display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    margin-top: 71px;
+}
+
+// ── Stats col ──────────────────────────────────────────────
+.stats-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #1a1f2e;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  ion-icon {
+    font-size: 13px;
+    color: #1a1f2e;
+  }
+}
+
+.stat-amount {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1f2e;
+  line-height: 1.1;
+}
+
+// ── Circle card ────────────────────────────────────────────
+.circle-card {
+  width: 120px;
+  background: #a8eae0;
+  border-radius: 24px;
+  padding: 14px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle-outer {
+  width: 96px;
+  height: 96px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+}
+
+.circle-svg-blue {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 53px;
+  height: 98px;
+}
+
+.circle-inner {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+  ion-icon {
+    font-size: 32px;
+    color: #1a1f2e;
+  }
+}
+
+.circle-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1f2e;
+  text-align: center;
+}
+
+// ── Progress bar ───────────────────────────────────────────
+.progress-wrap {
+  margin-bottom: 10px;
+}
+
+.progress-bar-outer {
+  background: #000;
+  border-radius: 66px;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.progress-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-left: 8px;
+  flex-shrink: 0;
+  min-width: 38px;
+}
+
+.progress-bar-inner {
+  border-radius: 36px;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+  box-sizing: border-box;
+  margin-left: auto;
+  background-color: #2ECFB0;
+
+  .progress-amount {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+// ── Note row ───────────────────────────────────────────────
+.note-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-
-// ── Left Stats ─────────────────────────────────────────────
-.hero-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.hero-stat-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.hero-stat-label {
-  display: flex;
-  align-items: center;
   gap: 6px;
+  margin-bottom: 20px;
 
-  .label-icon {
-    font-size: 14px;
-    color: #000000;
+  .note-icon {
+    font-size: 16px;
+    color: #000;
   }
 
-  span {
-    font-size: clamp(11px, 2.8vw, 13px);
-    color: #000000;
+  .note-text {
+    font-size: 12px;
+    color: #000;
     font-weight: 500;
   }
 }
 
-.hero-stat-amount {
-  font-size: clamp(22px, 6vw, 28px);
-  font-weight: 700;
-  color: #ffffff;
-  padding-left: 20px;
-
-  &--blue { color: #0068FF; }
+// ── Month row ──────────────────────────────────────────────
+.month-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 
-// ── Circle Right ───────────────────────────────────────────
-.circle-wrap {
-  position: relative;
-  width: 120px;
-  height: 120px;
+.month-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.menu-btn {
+  width: 32px;
+  height: 32px;
+  background: #2ECFB0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 17px;
+    color: #fff;
+  }
+}
+
+// ── Transaction list ───────────────────────────────────────
+.txn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txn-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.txn-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #a8eae0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+
+  ion-icon {
+    font-size: 22px;
+    color: #0068FF;
+  }
 }
 
-// Outer light circle SVG - centered
-.circle-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
-}
-
-// Blue arc SVG - left side overlay
-.circle-arc {
-  position: absolute;
-  top: 50%;
-  left: -2px;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 78px;
-  z-index: 2;
-}
-
-// Inner blue circle with icon
-.circle-inner {
-  width: 90px;
-  height: 90px;
-  background: #0068FF;
-  border-radius: 50%;
+.txn-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  z-index: 1;
+  gap: 3px;
+  flex: 1;
+}
 
-  .circle-icon {
-    font-size: 28px;
-    color: #ffffff;
-  }
+.txn-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
 
-  .circle-label {
-    font-size: 11px;
-    font-weight: 600;
-    color: #ffffff;
-    letter-spacing: 0.3px;
-  }
+.txn-date {
+  font-size: 11px;
+  color: #8a9bb0;
+  font-weight: 500;
+}
+
+.txn-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1f2e;
+  flex-shrink: 0;
+}
+
+// ── Add Savings button ─────────────────────────────────────
+.add-btn-wrap {
+  padding: 20px 0 0;
+}
+
+.add-btn {
+  --background: linear-gradient(135deg, #2ECFB0, #00b894);
+  --border-radius: 30px;
+  --color: #ffffff;
+  --box-shadow: 0 8px 24px rgba(46, 207, 176, 0.35);
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 0.3px;
 }

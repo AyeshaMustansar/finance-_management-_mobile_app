@@ -1,69 +1,133 @@
 <ion-content class="travel-content">
   <div class="main-content">
 
-    <!-- ===== GREEN TOP SECTION ===== -->
+    <!-- TOP TEAL SECTION -->
     <div class="top-section">
 
       <!-- Navbar -->
       <div class="navbar-row">
-        <div class="nav-btn nav-btn--back">
+        <div class="back-btn">
           <ion-icon name="chevron-back-outline"></ion-icon>
         </div>
-        <div class="nav-title">Travel</div>
         <div class="nav-btn nav-btn--bell">
           <ion-icon name="notifications-outline"></ion-icon>
         </div>
       </div>
 
-      <!-- Hero Row: Stats Left + Circle Right -->
+    </div>
+    <!-- END TOP SECTION -->
+
+    <!-- WHITE SECTION -->
+    <div class="white-section">
+
+      <!-- Hero Row: Stats + Circle -->
       <div class="hero-row">
 
-        <!-- Left: Goal & Amount Saved -->
-        <div class="hero-stats">
-
-          <div class="hero-stat-item">
-            <div class="hero-stat-label">
-              <ion-icon name="radio-button-on-outline" class="label-icon"></ion-icon>
-              <span>Goal</span>
+        <!-- Stats -->
+        <div class="stats-col">
+          <div class="stat-item">
+            <div class="stat-label">
+              <ion-icon name="flag-outline"></ion-icon>
+              Goal
             </div>
-            <div class="hero-stat-amount">$1,962.93</div>
+            <div class="stat-amount">$1,962.93</div>
           </div>
-
-          <div class="hero-stat-item">
-            <div class="hero-stat-label">
-              <ion-icon name="checkbox-outline" class="label-icon"></ion-icon>
-              <span>Amount Saved</span>
+          <div class="stat-item">
+            <div class="stat-label">
+              <ion-icon name="wallet-outline"></ion-icon>
+              Amount Saved
             </div>
-            <div class="hero-stat-amount hero-stat-amount--blue">$653.31</div>
+            <div class="stat-amount">$653.31</div>
           </div>
-
         </div>
 
-        <!-- Right: Circle with Arc + Icon -->
-        <div class="circle-wrap">
-
-          <!-- Outer light circle -->
-          <svg class="circle-bg" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="34.1723" cy="34.1722" r="33.0095" transform="rotate(-87.7272 34.1723 34.1722)" stroke="#F1FFF3" stroke-width="2.32461" stroke-linejoin="round"/>
-          </svg>
-
-          <!-- Blue arc overlay -->
-          <svg class="circle-arc" width="38" height="70" viewBox="0 0 38 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.26387 1.62746C22.4802 2.35044 36.6572 17.8078 35.9291 36.1524C35.201 54.4969 19.8436 68.7821 1.62726 68.0591" stroke="#0068FF" stroke-width="3.25446" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-
-          <!-- Blue circle background with plane icon -->
-          <div class="circle-inner">
-            <ion-icon name="airplane-outline" class="circle-icon"></ion-icon>
-            <span class="circle-label">Travel</span>
+        <!-- Circle Card -->
+        <div class="circle-card">
+          <div class="circle-outer">
+            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle-svg">
+              <circle cx="47.9924" cy="47.9923" r="46.3594" transform="rotate(-87.7272 47.9924 47.9923)" stroke="#F1FFF3" stroke-width="3.26474" stroke-linejoin="round"/>
+            </svg>
+            <svg width="53" height="98" viewBox="0 0 53 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle-svg-blue">
+              <path d="M5.98826 2.28579C31.5717 3.30117 51.4822 25.0098 50.4597 50.7734C49.4371 76.537 27.8688 96.5994 2.28534 95.584" stroke="#0068FF" stroke-width="4.57064" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="circle-inner">
+              <ion-icon name="airplane-outline"></ion-icon>
+            </div>
           </div>
-
+          <div class="circle-label">Travel</div>
         </div>
 
       </div>
 
+      <!-- Progress Bar -->
+      <div class="progress-wrap">
+        <div class="progress-bar-outer">
+          <span class="progress-label">40%</span>
+          <div class="progress-bar-inner">
+            <span class="progress-amount">$1,962.93</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note Row -->
+      <div class="note-row">
+        <ion-icon name="checkbox-outline" class="note-icon"></ion-icon>
+        <span class="note-text">30% Of Your Expenses, Looks Good.</span>
+      </div>
+
+      <!-- Month Row -->
+      <div class="month-row">
+        <span class="month-title">April</span>
+        <div class="menu-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+      </div>
+
+      <!-- Transaction List -->
+      <div class="txn-list">
+
+        <div class="txn-item">
+          <div class="txn-icon-wrap">
+            <ion-icon name="airplane-outline"></ion-icon>
+          </div>
+          <div class="txn-info">
+            <div class="txn-name">Travel Deposit</div>
+            <div class="txn-date">19:56 · April 30</div>
+          </div>
+          <div class="txn-amount">$217.77</div>
+        </div>
+
+        <div class="txn-item">
+          <div class="txn-icon-wrap">
+            <ion-icon name="airplane-outline"></ion-icon>
+          </div>
+          <div class="txn-info">
+            <div class="txn-name">Travel Deposit</div>
+            <div class="txn-date">17:42 · April 14</div>
+          </div>
+          <div class="txn-amount">$217.77</div>
+        </div>
+
+        <div class="txn-item">
+          <div class="txn-icon-wrap">
+            <ion-icon name="airplane-outline"></ion-icon>
+          </div>
+          <div class="txn-info">
+            <div class="txn-name">Travel Deposit</div>
+            <div class="txn-date">12:30 · April 02</div>
+          </div>
+          <div class="txn-amount">$217.77</div>
+        </div>
+
+      </div>
+
+      <!-- Add Savings Button -->
+      <div class="add-btn-wrap">
+        <ion-button expand="block" class="add-btn">Add Savings</ion-button>
+      </div>
+
     </div>
-    <!-- END GREEN SECTION -->
+    <!-- END WHITE SECTION -->
 
   </div>
 </ion-content>
