@@ -3,33 +3,31 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { airplaneOutline, checkboxOutline, chevronBackOutline, flagOutline, homeOutline, layersOutline, menuOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
+import { checkboxOutline, chevronBackOutline, diamondOutline, flagOutline, homeOutline, layersOutline, menuOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  selector: 'app-travelsavings',
-  templateUrl: './travelsavings.page.html',
-  styleUrls: ['./travelsavings.page.scss'],
+  selector: 'app-wedding-savings',
+  templateUrl: './wedding-savings.page.html',
+  styleUrls: ['./wedding-savings.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class TravelsavingsPage implements OnInit {
+export class WeddingSavingsPage implements OnInit {
 
   constructor() {
     addIcons({
+      diamondOutline,notificationsOutline,
       chevronBackOutline,
-      notificationsOutline,
       flagOutline,
       walletOutline,
-      airplaneOutline,
       checkboxOutline,
-      layersOutline,
-      swapHorizontalOutline,
-      personOutline,
-      searchOutline,
       menuOutline,
       homeOutline,
-
+      personOutline,
+      swapHorizontalOutline,
+      layersOutline,
+      searchOutline,
     })
    }
 

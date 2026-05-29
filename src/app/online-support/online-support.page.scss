@@ -1,99 +1,124 @@
+// ── Content ────────────────────────────────────────────────
 .support-content {
-  --background: #f0faf7;
+  --background: #2ECFB0;
   --padding-top: 0;
-  --padding-bottom: 40px;
+  --padding-bottom: 0;
   --padding-start: 0;
   --padding-end: 0;
 }
 
+// ── Main wrapper ───────────────────────────────────────────
 .main-content {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: #2ECFB0;
-  padding: clamp(40px, 8vw, 60px) clamp(14px, 5vw, 24px) 0;
 }
 
-// ── Navbar ─────────────────────────────────────────────────
+// ── Top teal section ───────────────────────────────────────
+.top-section {
+  background: #2ECFB0;
+  height: 120px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+// ── Navbar row ─────────────────────────────────────────────
 .navbar-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: clamp(20px, 5vw, 32px);
+  position: absolute;
+  top: 27px;
+  left: 20px;
+  right: 20px;
 }
 
-.nav-btn {
-  width: clamp(34px, 9vw, 42px);
-  height: clamp(34px, 9vw, 42px);
-  border-radius: 100px;
+.page-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1f2e;
+}
+
+.back-btn {
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 
-  ion-icon { font-size: clamp(18px, 4.5vw, 22px); }
-
-  &.nav-btn--back {
-    background: transparent;
-    ion-icon { color: #ffffff; }
+  ion-icon {
+    font-size: 24px;
+    color: #1a1f2e;
   }
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
   &.nav-btn--bell {
-    background: #ffffff;
-    ion-icon { color: #1a1f2e; }
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+
+    ion-icon {
+      font-size: 18px;
+      color: #1a1f2e;
+    }
   }
 }
 
-.nav-title {
-  font-size: clamp(16px, 4vw, 20px);
-  font-weight: 700;
-  color: #0068FF;
-}
-
-// ── White Section ──────────────────────────────────────────
+// ── White section ──────────────────────────────────────────
 .white-section {
   background: #f0faf7;
-  border-radius: 28px 28px 0 0;
-  padding: clamp(20px, 5vw, 28px) clamp(14px, 4vw, 20px) 40px;
+  border-radius: 58px 58px 0 0;
+  margin-top: -30px;
+  padding: 28px 16px 100px;
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
-// ── Section Labels ─────────────────────────────────────────
-.section-label {
-  font-size: clamp(13px, 3.2vw, 15px);
+// ── Section titles ─────────────────────────────────────────
+.section-title {
+  font-size: 14px;
   font-weight: 700;
   color: #1a1f2e;
   margin-bottom: 12px;
 
   &--gap {
     margin-top: 24px;
-    margin-bottom: 12px;
   }
 }
 
-// ── Chat List ──────────────────────────────────────────────
+// ── Chat list ──────────────────────────────────────────────
 .chat-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-// ── Chat Item ──────────────────────────────────────────────
+// ── Chat item ──────────────────────────────────────────────
 .chat-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 16px;
-  padding: clamp(12px, 3vw, 16px);
+  padding: 12px 14px;
 }
 
-// Avatar circle
+// ── Chat avatar ────────────────────────────────────────────
 .chat-avatar {
-  width: clamp(42px, 10vw, 50px);
-  height: clamp(42px, 10vw, 50px);
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: #2ECFB0;
   display: flex;
@@ -102,60 +127,77 @@
   flex-shrink: 0;
 
   ion-icon {
-    font-size: clamp(20px, 5vw, 24px);
-    color: #fff;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  &--ended {
+    background: #a8eae0;
+
+    ion-icon {
+      color: #1a1f2e;
+    }
   }
 }
 
-// Chat text info
+// ── Chat info ──────────────────────────────────────────────
 .chat-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
   flex: 1;
   min-width: 0;
 }
 
 .chat-name {
-  font-size: clamp(13px, 3.2vw, 15px);
+  font-size: 14px;
   font-weight: 700;
   color: #1a1f2e;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .chat-msg {
-  font-size: clamp(10px, 2.5vw, 12px);
-  color: #888;
+  font-size: 11px;
+  color: #8a9bb0;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-// Timestamp
-.chat-time {
-  font-size: clamp(9px, 2.3vw, 11px);
-  color: #aaa;
-  font-weight: 500;
+// ── Chat meta ──────────────────────────────────────────────
+.chat-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   flex-shrink: 0;
-  text-align: right;
 }
 
-// ── Start Button ───────────────────────────────────────────
-.start-btn {
-  display: block;
-  width: 70%;
-  margin: 32px auto 0;
-  padding: clamp(12px, 3vw, 16px);
-  background: #2ECFB0;
-  border: none;
-  border-radius: 50px;
-  font-size: clamp(14px, 3.5vw, 17px);
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
+.chat-time {
+  font-size: 11px;
+  font-weight: 600;
+  color: #2ECFB0;
 
-  &:hover { background: #25b89c; }
+  &--ended {
+    color: #8a9bb0;
+  }
+}
+
+// ── Start Another Chat button ──────────────────────────────
+.add-btn-wrap {
+  padding-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  --background: linear-gradient(135deg, #2ECFB0, #00b894);
+  --border-radius: 30px;
+  --color: #ffffff;
+  --box-shadow: 0 8px 24px rgba(46, 207, 176, 0.35);
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 0.3px;
+  width: 100%;
+  max-width: 320px;
 }

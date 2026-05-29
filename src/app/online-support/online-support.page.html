@@ -1,22 +1,24 @@
 <ion-content class="support-content">
   <div class="main-content">
 
-    <!-- ===== NAVBAR ===== -->
-    <div class="navbar-row">
-      <div class="nav-btn nav-btn--back">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </div>
-      <div class="nav-title">Online Support</div>
-      <div class="nav-btn nav-btn--bell">
-        <ion-icon name="notifications-outline"></ion-icon>
+    <!-- TOP TEAL SECTION -->
+    <div class="top-section">
+      <div class="navbar-row">
+        <div class="back-btn">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </div>
+        <span class="page-title">Online Support</span>
+        <div class="nav-btn nav-btn--bell">
+          <ion-icon name="notifications-outline"></ion-icon>
+        </div>
       </div>
     </div>
 
-    <!-- ===== WHITE SECTION ===== -->
+    <!-- WHITE SECTION -->
     <div class="white-section">
 
       <!-- Active Chats -->
-      <div class="section-label">Active Chats</div>
+      <div class="section-title">Active Chats</div>
 
       <div class="chat-list">
         <div class="chat-item">
@@ -25,67 +27,67 @@
           </div>
           <div class="chat-info">
             <div class="chat-name">Support Assistant</div>
-            <div class="chat-msg">Hello! I'm here to assist you</div>
+            <div class="chat-msg">Hello! I'm here to assist you.</div>
           </div>
-          <div class="chat-time">2 Min Ago</div>
+          <div class="chat-meta">
+            <div class="chat-time">3 Min Ago</div>
+          </div>
         </div>
       </div>
 
       <!-- Ended Chats -->
-      <div class="section-label section-label--gap">Ended Chats</div>
+      <div class="section-title section-title--gap">Ended Chats</div>
 
       <div class="chat-list">
 
         <div class="chat-item">
-          <div class="chat-avatar">
+          <div class="chat-avatar chat-avatar--ended">
             <ion-icon name="help-circle-outline"></ion-icon>
           </div>
           <div class="chat-info">
             <div class="chat-name">Help Center</div>
             <div class="chat-msg">Your account is ready to use...</div>
           </div>
-          <div class="chat-time">Feb 08 · 2024</div>
+          <div class="chat-meta">
+            <div class="chat-time chat-time--ended">Feb 06 · 2024</div>
+          </div>
         </div>
 
         <div class="chat-item">
-          <div class="chat-avatar">
+          <div class="chat-avatar chat-avatar--ended">
             <ion-icon name="headset-outline"></ion-icon>
           </div>
           <div class="chat-info">
             <div class="chat-name">Support Assistant</div>
-            <div class="chat-msg">Hello! I'm here to assist you</div>
+            <div class="chat-msg">Hello! I'm here to assist you.</div>
           </div>
-          <div class="chat-time">Dec 24 · 2023</div>
+          <div class="chat-meta">
+            <div class="chat-time chat-time--ended">Sep 10 · 2023</div>
+          </div>
         </div>
 
         <div class="chat-item">
-          <div class="chat-avatar">
-            <ion-icon name="headset-outline"></ion-icon>
-          </div>
-          <div class="chat-info">
-            <div class="chat-name">Support Assistant</div>
-            <div class="chat-msg">Hello! I'm here to assist you</div>
-          </div>
-          <div class="chat-time">Sep 10 · 2023</div>
-        </div>
-
-        <div class="chat-item">
-          <div class="chat-avatar">
+          <div class="chat-avatar chat-avatar--ended">
             <ion-icon name="help-circle-outline"></ion-icon>
           </div>
           <div class="chat-info">
             <div class="chat-name">Help Center</div>
             <div class="chat-msg">Hi, how are you today?</div>
           </div>
-          <div class="chat-time">June 12 · 2023</div>
+          <div class="chat-meta">
+            <div class="chat-time chat-time--ended">June 13 · 2022</div>
+          </div>
         </div>
 
       </div>
 
       <!-- Start Another Chat Button -->
-      <button class="start-btn">Start Another Chat</button>
+      <div class="add-btn-wrap">
+        <ion-button expand="block" class="add-btn">Start Another Chat</ion-button>
+      </div>
 
     </div>
+    <!-- END WHITE SECTION -->
 
   </div>
 </ion-content>

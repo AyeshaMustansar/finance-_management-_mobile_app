@@ -206,6 +206,18 @@ export const routes: Routes = [
     path: 'online-support',
     loadComponent: () => import('./online-support/online-support.page').then( m => m.OnlineSupportPage)
   },
+  {
+    path: 'home-savings',
+    loadComponent: () => import('./home-savings/home-savings.page').then( m => m.HomeSavingsPage)
+  },
+  {
+    path: 'wedding-savings',
+    loadComponent: () => import('./wedding-savings/wedding-savings.page').then( m => m.WeddingSavingsPage)
+  },
+  {
+    path: 'car-savings',
+    loadComponent: () => import('./car-savings/car-savings.page').then( m => m.CarSavingsPage)
+  },
 
  
   
