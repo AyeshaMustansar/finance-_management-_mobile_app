@@ -58,9 +58,9 @@
 
       <!-- Tab Bar -->
       <div class="tab-bar">
-        <div class="tab-item">Daily</div>
-        <div class="tab-item ">Weekly</div>
-        <div class="tab-item ">Monthly</div>
+        <div class="tab-item"    (click)="goTodaily()"   >Daily</div>
+        <div class="tab-item"     (click)="goToweekly()">Weekly</div>
+        <div class="tab-item"    (click)="goTomonthly()">Monthly</div>
         <div class="tab-item  tab-item--active">Year</div>
       </div>
 
@@ -200,20 +200,22 @@
 
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
-    <div class="nav-active-bg">
-      <ion-icon name="home-outline"></ion-icon>
+ 
+   <ion-icon name="home-outline"(click)="goTobottomnavigation()" ></ion-icon>
     </div>
+
+  <div class="nav-item   nav-item--active">
+     <div class="nav-active-bg">
+    <ion-icon name="search-outline"></ion-icon>
+  </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="bar-chart-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="layers-outline"(click)="goTocategories()" ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
-  </div>
-  <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline"     (click)="goToprofile()" ></ion-icon>
   </div>
 </ion-footer>

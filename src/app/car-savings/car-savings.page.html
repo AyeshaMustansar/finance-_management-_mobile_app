@@ -131,7 +131,7 @@
 
       <!-- Add Savings Button -->
       <div class="add-btn-wrap">
-        <ion-button expand="block" class="add-btn">Add Savings</ion-button>
+        <ion-button expand="block" class="add-btn"  (click)="goToaddsavings()">Add Savings</ion-button>
       </div>
 
     </div>
@@ -148,13 +148,13 @@
 
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon name="home-outline" (click)="goTobottomnavigation()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline" (click)="goTodaily()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"></ion-icon>
   </div>
   <div class="nav-active-bg">
     <div class="nav-item">
@@ -162,6 +162,6 @@
     </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline" (click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

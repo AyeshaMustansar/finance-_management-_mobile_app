@@ -1,0 +1,194 @@
+/* ================================
+   SECURITY PIN PAGE
+   ================================ */
+
+.security-pin-content {
+  --background: #2dcea3;
+
+  /* ---- Green Top Area ---- */
+  .green-top {
+    background: #2dcea3;
+    width: 100%;
+    padding: 60px 24px 80px;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a5e4a;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  /* ---- White Bottom Sheet ---- */
+  .white-sheet {
+    background: #f0fdf8;
+    border-radius: 32px 32px 0 0;
+    margin-top: -32px;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    padding: 127px 22px 32px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* ---- Center Wrapper (constrained on desktop) ---- */
+  .center-wrapper {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ---- Pin Heading ---- */
+  .pin-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  /* ---- Pin Row ---- */
+  .pin-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .pin-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #2dcea3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: transparent;
+  }
+
+  /* ---- Accept Button ---- */
+  .accept-btn {
+    width: 65%;
+    height: 42px;
+    background: linear-gradient(90deg, #2dcea3, #4de8bf);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(45, 206, 163, 0.35);
+    margin-bottom: 12px;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+
+    &:active {
+      opacity: 0.88;
+      transform: scale(0.98);
+    }
+  }
+
+  /* ---- Send Again Button ---- */
+  .send-again-btn {
+    width: 65%;
+    height: 42px;
+    background: #ffffff;
+    border: 2px solid #e0f0ea;
+    border-radius: 30px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+
+    &:active {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+  }
+
+  /* ---- Spacer ---- */
+  .spacer {
+    flex: 1;
+    min-height: 32px;
+  }
+
+  /* ---- Or Text ---- */
+  .or-text {
+    font-size: 12.5px;
+    color: #aaa;
+    text-align: center;
+    margin: 0 0 14px;
+  }
+
+  /* ---- Social Row ---- */
+  .social-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+
+  .social-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #e0f0ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    ion-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  /* ---- Bottom Row ---- */
+  .bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .bottom-text {
+    font-size: 12.5px;
+    color: #aaa;
+  }
+
+  /* ---- Link Button ---- */
+  .link-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 12.5px;
+    color: #2dcea3;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}

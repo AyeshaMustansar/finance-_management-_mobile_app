@@ -113,9 +113,9 @@
 
       <!-- Tab Bar -->
       <div class="tab-bar">
-        <div class="tab-item">Daily</div>
-        <div class="tab-item">Weekly</div>
-        <div class="tab-item tab-item--active">Monthly</div>
+        <div class="tab-item"  (click)="goTodaily()" >Daily</div>
+        <div class="tab-item"    (click)="goToweekly()"  >Weekly</div>
+        <div class="tab-item tab-item--active"   >Monthly</div>
       </div>
 
       <!-- Transaction List -->
@@ -192,15 +192,15 @@
     </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"   (click)="goTodaily()"  ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline"  (click)="goTotransaction()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
+    <ion-icon name="layers-outline" (click)="goTocategories()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline"  (click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

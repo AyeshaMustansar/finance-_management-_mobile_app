@@ -2,6 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Router } from '@angular/router'; 
 
 import { addIcons } from 'ionicons';
 import {
@@ -36,7 +37,7 @@ import {
 })
 export class CategoriesPage implements OnInit {
 
-  constructor() {
+  constructor(  private router: Router) {
     addIcons({
       chevronBackOutline,
       notificationsOutline,
@@ -60,4 +61,54 @@ export class CategoriesPage implements OnInit {
   }
 
   ngOnInit() {}
+
+
+     goTofood(){
+    this.router.navigate(['/food']);
+   }
+
+        goTotransport(){
+    this.router.navigate(['/transport']);
+   }
+
+           goTomedicine(){
+    this.router.navigate(['/medicine']);
+   }
+
+
+           goTogroceries(){
+    this.router.navigate(['/groceries']);
+   }
+
+           goToentertainment(){
+    this.router.navigate(['/entertainment']);
+   } 
+   
+   
+              goTorent(){
+    this.router.navigate(['/rent']);
+   }
+
+   
+   
+   
+   
+   goTosavings(){
+    this.router.navigate(['/savings']);
+   }
+            
+              goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+              goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+            
+              goToprofile(){
+    this.router.navigate(['/profile']);
+   }
 }

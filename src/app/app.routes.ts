@@ -218,6 +218,34 @@ export const routes: Routes = [
     path: 'car-savings',
     loadComponent: () => import('./car-savings/car-savings.page').then( m => m.CarSavingsPage)
   },
+  {
+    path: 'create-account',
+    loadComponent: () => import('./create-account/create-account.page').then( m => m.CreateAccountPage)
+  },
+  {
+    path: 'forgot-password',
+    loadComponent: () => import('./forgot-password/forgot-password.page').then( m => m.ForgotPasswordPage)
+  },
+  {
+    path: 'security-pin',
+    loadComponent: () => import('./security-pin/security-pin.page').then( m => m.SecurityPinPage)
+  },
+  {
+    path: 'new-password',
+    loadComponent: () => import('./new-password/new-password.page').then( m => m.NewPasswordPage)
+  },
+  {
+    path: 'security-fingerprint',
+    loadComponent: () => import('./security-fingerprint/security-fingerprint.page').then( m => m.SecurityFingerprintPage)
+  },
+  {
+    path: 'on-boarding',
+    loadComponent: () => import('./on-boarding/on-boarding.page').then( m => m.OnBoardingPage)
+  },
+  {
+    path: 'addsavings',
+    loadComponent: () => import('./addsavings/addsavings.page').then( m => m.AddsavingsPage)
+  },
 
  
   

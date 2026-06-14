@@ -7,7 +7,7 @@
       <!-- Navbar -->
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline" (click)="goTobottomnavigation()"></ion-icon>
         </div>
         <div class="nav-title">Categories</div>
         <div class="nav-btn nav-btn--bell">
@@ -59,39 +59,39 @@
       <!-- Categories Grid -->
       <div class="cat-grid">
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap cat-icon-wrap--active">
-            <ion-icon name="restaurant-outline"></ion-icon>
+        <div class="cat-card"(click)="goTofood()">
+          <div class="cat-icon-wrap cat-icon-wrap--active"(click)="goTofood()">
+            <ion-icon name="restaurant-outline"(click)="goTofood()"></ion-icon>
           </div>
-          <div class="cat-label">Food</div>
+          <div class="cat-label" (click)="goTofood()">Food</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="bus-outline"></ion-icon>
+        <div class="cat-card" (click)="goTotransport()">
+          <div class="cat-icon-wrap"  (click)="goTotransport()">
+            <ion-icon name="bus-outline"  (click)="goTotransport()"></ion-icon>
           </div>
-          <div class="cat-label">Transport</div>
+          <div class="cat-label"  (click)="goTotransport()">Transport</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="medkit-outline"></ion-icon>
+        <div class="cat-card" (click)="goTomedicine()">
+          <div class="cat-icon-wrap"  (click)="goTomedicine()">
+            <ion-icon name="medkit-outline" (click)="goTomedicine()"></ion-icon>
           </div>
-          <div class="cat-label">Medicine</div>
+          <div class="cat-label" (click)="goTomedicine()">Medicine</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="basket-outline"></ion-icon>
+        <div class="cat-card" (click)="goTogroceries()"  >
+          <div class="cat-icon-wrap" (click)="goTogroceries()">
+            <ion-icon name="basket-outline" (click)="goTogroceries()"></ion-icon>
           </div>
-          <div class="cat-label">Groceries</div>
+          <div class="cat-label"   (click)="goTogroceries()"   >Groceries</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="home-outline"></ion-icon>
+        <div class="cat-card" (click)="goTorent()">
+          <div class="cat-icon-wrap"  (click)="goTorent()">
+            <ion-icon name="home-outline"  (click)="goTorent()"></ion-icon>
           </div>
-          <div class="cat-label">Rent</div>
+          <div class="cat-label"  (click)="goTorent()">Rent</div>
         </div>
 
         <div class="cat-card">
@@ -101,18 +101,18 @@
           <div class="cat-label">Gifts</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="wallet-outline"></ion-icon>
+        <div class="cat-card"  (click)="goTosavings()">
+          <div class="cat-icon-wrap"  (click)="goTosavings()">
+            <ion-icon name="wallet-outline" (click)="goTosavings()"></ion-icon>
           </div>
-          <div class="cat-label">Savings</div>
+          <div class="cat-label" (click)="goTosavings()">Savings</div>
         </div>
 
-        <div class="cat-card">
-          <div class="cat-icon-wrap">
-            <ion-icon name="ticket-outline"></ion-icon>
+        <div class="cat-card"  (click)="goToentertainment()">
+          <div class="cat-icon-wrap"  (click)="goToentertainment()">
+            <ion-icon name="ticket-outline" (click)="goToentertainment()"></ion-icon>
           </div>
-          <div class="cat-label">Entertainment</div>
+          <div class="cat-label" (click)="goToentertainment()">Entertainment</div>
         </div>
 
         <div class="cat-card">
@@ -136,15 +136,15 @@
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
    
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline" (click)="goTobottomnavigation()"  ></ion-icon>
   
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline" (click)="goTodaily()"></ion-icon>
   </div>
 
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"></ion-icon>
   </div>
  
      <div class="nav-active-bg">
@@ -153,6 +153,6 @@
   </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline"(click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

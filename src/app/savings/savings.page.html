@@ -5,7 +5,7 @@
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline"(click)="goTocategories()"></ion-icon>
         </div>
         <div class="nav-title">Savings</div>
         <div class="nav-btn nav-btn--bell">
@@ -55,35 +55,35 @@
       <div class="savings-grid">
 
         <!-- Travel (active - dark blue) -->
-        <div class="savings-card">
-          <div class="savings-icon-wrap savings-icon-wrap--active">
-            <ion-icon name="airplane-outline"></ion-icon>
+        <div class="savings-card" (click)="goTotravelsavings()">
+          <div class="savings-icon-wrap savings-icon-wrap--active"  (click)="goTotravelsavings()" >
+            <ion-icon name="airplane-outline" (click)="goTotravelsavings()"></ion-icon>
           </div>
-          <div class="savings-label">Travel</div>
+          <div class="savings-label" (click)="goTotravelsavings()">Travel</div>
         </div>
 
         <!-- New House -->
-        <div class="savings-card">
-          <div class="savings-icon-wrap">
-            <ion-icon name="home-outline"></ion-icon>
+        <div class="savings-card" (click)="goTohomesavings()">
+          <div class="savings-icon-wrap" (click)="goTohomesavings()">
+            <ion-icon name="home-outline" (click)="goTohomesavings()"></ion-icon>
           </div>
-          <div class="savings-label">New House</div>
+          <div class="savings-label"(click)="goTohomesavings()">New House</div>
         </div>
 
         <!-- Car -->
-        <div class="savings-card">
-          <div class="savings-icon-wrap">
-            <ion-icon name="car-outline"></ion-icon>
+        <div class="savings-card"  (click)="goTocarsavings()">
+          <div class="savings-icon-wrap"  (click)="goTocarsavings()">
+            <ion-icon name="car-outline" (click)="goTocarsavings()"></ion-icon>
           </div>
-          <div class="savings-label">Car</div>
+          <div class="savings-label" (click)="goTocarsavings()">Car</div>
         </div>
 
         <!-- Wedding -->
-        <div class="savings-card">
-          <div class="savings-icon-wrap">
-            <ion-icon name="heart-outline"></ion-icon>
+        <div class="savings-card"(click)="goToweddingsavings()">
+          <div class="savings-icon-wrap"(click)="goToweddingsavings()">
+            <ion-icon name="heart-outline"(click)="goToweddingsavings()"></ion-icon>
           </div>
-          <div class="savings-label">Wedding</div>
+          <div class="savings-label"(click)="goToweddingsavings()">Wedding</div>
         </div>
 
       </div>
@@ -104,15 +104,15 @@
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
    
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline"(click)="goTobottomnavigation()"></ion-icon>
   
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"(click)="goTodaily()"></ion-icon>
   </div>
 
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline"(click)="goTotransaction()"></ion-icon>
  
   </div>
      <div class="nav-active-bg">
@@ -121,6 +121,6 @@
   </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline" (click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

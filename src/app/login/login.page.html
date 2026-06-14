@@ -12,9 +12,9 @@
     </div>
 
     <div class="buttons-section">
-      <ion-button class="btn-login" expand="block" shape="round">Log In</ion-button>
-      <ion-button class="btn-signup" expand="block" shape="round" fill="outline">Sign Up</ion-button>
-      <p class="forgot-text">Forgot Password?</p>
+      <ion-button class="btn-login" expand="block" shape="round"    (click)="goTosingup()"    >Log In</ion-button>
+      <ion-button class="btn-signup" expand="block" shape="round" fill="outline"      (click)="goTocreateaccount()"    >Sign Up</ion-button>
+      <p class="forgot-text" (click)="goToforgotpassword()" >Forgot Password?</p>
     </div>
 
   </div>

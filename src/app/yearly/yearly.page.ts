@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
+import { Router } from '@angular/router';
 import { arrowDownOutline, arrowUpOutline, barChartOutline, calendarOutline, cardOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline } from 'ionicons/icons';
 
 @Component({
@@ -15,7 +16,7 @@ import { arrowDownOutline, arrowUpOutline, barChartOutline, calendarOutline, car
 })
 export class YearlyPage implements OnInit {
 
-  constructor() { 
+  constructor(    private router: Router ) { 
     addIcons({
       homeOutline,
       layersOutline,
@@ -38,4 +39,49 @@ export class YearlyPage implements OnInit {
   ngOnInit() {
   }
 
+
+
+
+
+
+
+
+
+
+
+  
+   goTomonthly() {
+    this.router.navigate(['/monthly']);
+  }
+
+
+
+    
+   goToweekly() {
+    this.router.navigate(['/weekly']);
+  }
+
+    goTodaily() {
+    this.router.navigate(['/daily']);
+
+  }
+
+
+
+     goTobottomnavigation() {
+    this.router.navigate(['/bottomnavigation']);
+   }
+      goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+
+   
+   goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+      goToprofile(){
+    this.router.navigate(['/profile']);
+   }
 }

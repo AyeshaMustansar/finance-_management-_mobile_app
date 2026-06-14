@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
+import { Router } from '@angular/router';
 import { barChartOutline, basketOutline, cardOutline, carOutline, cashOutline, checkboxOutline, homeOutline, layersOutline, notificationsOutline, personOutline, restaurantOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
@@ -15,7 +16,7 @@ import { barChartOutline, basketOutline, cardOutline, carOutline, cashOutline, c
 })
 export class BottomnavigationPage implements OnInit {
 
-  constructor() {
+  constructor(      private router: Router      ) {
     addIcons({
       checkboxOutline,
       cashOutline,
@@ -36,5 +37,34 @@ export class BottomnavigationPage implements OnInit {
 
   ngOnInit() {
   }
+
+
+  goTodaily() {
+    this.router.navigate(['/daily']);
+  }
+
+
+    goTomonthly() {
+    this.router.navigate(['/monthly']);
+  }
+
+
+    goToweekly() {
+    this.router.navigate(['/weekly']);
+  }
+
+
+
+   goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+   goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+   goToprofile(){
+    this.router.navigate(['/profile']);
+   }
 
 }

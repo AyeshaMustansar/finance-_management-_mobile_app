@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
+import { Router } from '@angular/router';
+
 import { arrowBackOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, restaurantOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
 
 @Component({
@@ -15,7 +17,7 @@ import { arrowBackOutline, barChartOutline, basketOutline, busOutline, cardOutli
 })
 export class TransactionPage implements OnInit {
 
-  constructor() { 
+  constructor(    private router: Router ) { 
     addIcons({
       arrowBackOutline,
       notificationsOutline,
@@ -38,5 +40,27 @@ export class TransactionPage implements OnInit {
 
   ngOnInit() {
   }
+
+  
+goTotransactionincome() {
+  this.router.navigate(['/transactionincome']);
+}
+
+goTobottomnavigation() {
+  this.router.navigate(['/bottomnavigation']);
+}
+ 
+goTodaily() {
+  this.router.navigate(['/daily']);
+}
+
+
+   goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+   goToprofile(){
+    this.router.navigate(['/profile']);
+   }
 
 }

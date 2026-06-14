@@ -1,31 +1,34 @@
-<ion-content [fullscreen]="true" class="onboard-content">
+<ion-content [fullscreen]="true" [scrollY]="false" class="onboarding-content">
 
-  <div class="main-wrapper">
+  <!-- Green Top Section -->
+  <div class="green-top">
+    <h1 class="page-title">Welcome To<br>Expense Manager</h1>
+  </div>
 
-    <!-- Top Green Section -->
-    <div class="top-section">
-      <h1 class="header-title">Welcome To<br>Expense Manager</h1>
-    </div>
+  <!-- White Bottom Sheet -->
+  <div class="white-sheet">
+    <div class="center-wrapper">
 
-    <!-- Bottom White Card -->
-    <div class="bottom-card">
-
+      <!-- Coin Image with Circle -->
       <div class="image-section">
         <div class="circle-bg">
           <img src="../../assets/coins.png" alt="Coins" class="coins-img" />
         </div>
       </div>
 
+      <!-- Spacer -->
+      <div class="spacer"></div>
+
+      <!-- Footer -->
       <div class="footer-section">
         <h2 class="next-text">Next</h2>
         <div class="dots">
-          <span class="dot dot-active"></span>
+          <span class="dot dot-active"(click)="goTologin()" ></span>
           <span class="dot dot-inactive"></span>
         </div>
       </div>
 
     </div>
-
   </div>
 
 </ion-content>

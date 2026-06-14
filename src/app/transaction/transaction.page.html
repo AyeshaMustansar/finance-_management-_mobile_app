@@ -7,7 +7,7 @@
     <!-- Navbar -->
     <div class="navbar-row">
       <div class="nav-btn nav-btn--back">
-        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-icon name="chevron-back-outline"  (click)="goTobottomnavigation()"></ion-icon>
       </div>
 
       <div class="nav-title">Transaction</div>
@@ -18,9 +18,9 @@
     </div>
 
     <!-- White Balance Card -->
-    <div class="balance-card">
-      <div class="balance-card__label">Total Balance</div>
-      <div class="balance-card__amount">$7,783.00</div>
+    <div class="balance-card"   (click)="goTotransactionincome()"  >
+      <div class="balance-card__label"  (click)="goTotransactionincome()" >Total Balance</div>
+      <div class="balance-card__amount"  (click)="goTotransactionincome()" >$7,783.00</div>
     </div>
 
     <!-- Total Balance & Expense Row -->
@@ -180,11 +180,11 @@
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
    
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline" (click)="goTobottomnavigation()"></ion-icon>
   
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"(click)="goTodaily()" ></ion-icon>
   </div>
    <div class="nav-active-bg">
   <div class="nav-item">
@@ -192,9 +192,9 @@
   </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
+    <ion-icon name="layers-outline"  (click)="goTocategories()" ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline"(click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

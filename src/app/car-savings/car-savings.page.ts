@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { carOutline, chevronBackOutline, flagOutline, helpOutline, homeOutline, layersOutline, menu, menuOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
-
+import { Router } from '@angular/router';
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-car-savings',
@@ -15,7 +15,7 @@ import { carOutline, chevronBackOutline, flagOutline, helpOutline, homeOutline, 
 })
 export class CarSavingsPage implements OnInit {
 
-  constructor() {
+  constructor( private router :Router) {
     addIcons({
       helpOutline,
       personOutline,
@@ -35,4 +35,26 @@ export class CarSavingsPage implements OnInit {
   ngOnInit() {
   }
 
+  
+                
+              goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+              goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+
+                    goToaddsavings(){
+    this.router.navigate(['/addsavings']);
+   }
+  goToprofile(){
+    this.router.navigate(['/profile']);
+   }
+
+   
 }

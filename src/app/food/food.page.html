@@ -5,7 +5,7 @@
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline"(click)="goTocategories()"></ion-icon>
         </div>
         <div class="nav-title">Food</div>
         <div class="nav-btn nav-btn--bell">
@@ -126,7 +126,7 @@
       </div>
 
       <!-- Add Expenses Button -->
-      <div class="add-btn">Add Expenses</div>
+      <div class="add-btn"(click)="goToaddexpense()">Add Expenses</div>
 
     </div>
 
@@ -143,15 +143,15 @@
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
    
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline" (click)="goTobottomnavigation()"></ion-icon>
   
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"(click)="goTodaily()"></ion-icon>
   </div>
 
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline"(click)="goTotransaction()"></ion-icon>
  
   </div>
      <div class="nav-active-bg">
@@ -160,6 +160,6 @@
   </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline" (click)="goToprofile()"></ion-icon>
   </div>
 </ion-footer>

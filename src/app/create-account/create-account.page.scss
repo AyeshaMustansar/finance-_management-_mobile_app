@@ -1,0 +1,177 @@
+/* ================================
+   CREATE ACCOUNT PAGE
+   ================================ */
+
+.create-account-content {
+  --background: #2dcea3;
+
+  /* ---- Green Top Area ---- */
+  .green-top {
+    background: #2dcea3;
+    width: 100%;
+    padding: 60px 24px 80px;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a5e4a;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  /* ---- White Bottom Sheet ---- */
+  .white-sheet {
+    background: #ffffff;
+    border-radius: 32px 32px 0 0;
+    margin-top: -32px;
+    min-height: calc(100vh - 120px);
+    padding: 32px 22px 40px;
+    position: relative;
+    z-index: 2;
+
+    /* Desktop: constrain form to a narrow centered column */
+    @media (min-width: 768px) {
+      padding: 40px 0 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input-group,
+      .terms-text,
+      .signup-btn,
+      .login-row {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+  }
+
+  /* ---- Input Groups ---- */
+  .input-group {
+    margin-bottom: 14px;
+  }
+
+  .input-label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    padding-left: 2px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #e8f9f3;
+    border-radius: 12px;
+    padding: 0 14px;
+    height: 48px;
+
+    &--icon {
+      padding-right: 6px;
+    }
+  }
+
+  .custom-input {
+    --background: transparent;
+    --color: #333;
+    --placeholder-color: #a8d5c5;
+    --placeholder-opacity: 1;
+    --padding-start: 0;
+    --padding-end: 0;
+    font-size: 14px;
+    flex: 1;
+    height: 100%;
+  }
+
+  /* ---- Eye Toggle Button ---- */
+  .eye-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 8px;
+    cursor: pointer;
+    color: #a8d5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+      font-size: 20px;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  /* ---- Terms Text ---- */
+  .terms-text {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin: 18px 0 20px;
+    line-height: 1.7;
+  }
+
+  /* ---- Link Buttons ---- */
+  .link-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: inherit;
+    color: #2dcea3;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  /* ---- Sign Up Button ---- */
+  .signup-btn {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(90deg, #2dcea3, #4de8bf);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(45, 206, 163, 0.40);
+    transition: opacity 0.2s ease, transform 0.15s ease;
+
+    &:active {
+      opacity: 0.88;
+      transform: scale(0.98);
+    }
+  }
+
+  /* ---- Login Row ---- */
+  .login-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 18px;
+  }
+
+  .login-text {
+    font-size: 12.5px;
+    color: #999;
+  }
+
+  .login-link {
+    font-size: 12.5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #2dcea3;
+  }
+}

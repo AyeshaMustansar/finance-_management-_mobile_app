@@ -1,71 +1,74 @@
 <ion-content class="login-content">
+  <div class="main-content">
 
-  <!-- Welcome Card -->
-  <div class="welcome-card">
-    <h1 class="welcome-title">Welcome</h1>
+    <!-- TOP GREEN SECTION -->
+    <div class="top-section">
+      <h1 class="welcome-title">Welcome</h1>
+    </div>
+
+    <!-- WHITE CARD SECTION -->
+    <div class="white-section">
+
+      <!-- Username / Email -->
+      <div class="input-group">
+        <label class="input-label">Username Or Email</label>
+        <input
+          type="email"
+          class="input-field"
+          placeholder="example@example.com"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <label class="input-label">Password</label>
+        <div class="input-password-wrap">
+          <input
+            type="password"
+            class="input-field"
+            placeholder="••••••••"
+          />
+          <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+        </div>
+      </div>
+
+      <!-- Log In Button -->
+      <div class="btn-wrap">
+        <button class="btn-login" (click)="goTobottomnavigation()">Log In</button>
+      </div>
+
+      <!-- Forgot Password -->
+      <div class="forgot-wrap">
+        <button class="btn-forgot"  (click)="goToforgotpassword()"  >Forgot Password?</button>
+      </div>
+
+      <!-- Sign Up Button -->
+      <div class="btn-wrap">
+      <button class="btn-signup" (click)="goTocreateaccount()">
+  Sign Up
+</button>
+      </div>
+
+      <!-- Fingerprint -->
+      <div class="fingerprint-wrap">
+        <p class="fingerprint-text"  (click)="goTosecurityfingerprint()">Use Fingerprint To Access</p>
+        <div class="fingerprint-icons">
+          <button class="fp-btn">
+            <ion-icon name="logo-google"></ion-icon>
+          </button>
+          <button class="fp-btn">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom link -->
+      <div class="bottom-link-wrap">
+        <p class="bottom-link-text"    (click)="goTocreateaccount()"    >Don't have an account? <span class="link-sign">Sign Up</span></p>
+      </div>
+
+    </div>
+    <!-- END WHITE SECTION -->
+
   </div>
-
-  <!-- Form Container -->
-  <div class="form-container">
-
-    <!-- Username / Email -->
-    <div class="input-group">
-      <label class="input-label">Username Or Email</label>
-      <div class="input-wrapper">
-        <ion-input type="email" class="custom-input"></ion-input>
-        <ion-icon name="mail-outline" class="input-icon"></ion-icon>
-      </div>
-    </div>
-
-    <!-- Password -->
-    <div class="input-group">
-      <label class="input-label">Password</label>
-      <div class="input-wrapper">
-        <ion-input type="password" class="custom-input"></ion-input>
-        <ion-icon name="eye-off-outline" class="input-icon"></ion-icon>
-      </div>
-    </div>
-
-    <!-- Login Button -->
-    <div class="btn-row">
-      <ion-button expand="block" class="btn-login" shape="round">Log In</ion-button>
-    </div>
-
-    <!-- Forgot Password -->
-    <div class="forgot-row">
-      <span class="forgot-text">Forgot Password?</span>
-    </div>
-
-    <!-- Sign Up Button -->
-    <div class="btn-row">
-      <ion-button expand="block" fill="outline" class="btn-signup" shape="round">Sign Up</ion-button>
-    </div>
-
-    <!-- Fingerprint -->
-    <div class="fingerprint-row">
-      <span class="fp-text">Use <strong>Fingerprint</strong> To Access</span>
-    </div>
-
-    <!-- Or sign up with -->
-    <div class="or-row">
-      <span class="or-text">or sign up with</span>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social-row">
-      <div class="social-btn">
-        <ion-icon name="logo-facebook" class="icon-facebook"></ion-icon>
-      </div>
-      <div class="social-btn">
-        <ion-icon name="logo-google" class="icon-google"></ion-icon>
-      </div>
-    </div>
-
-    <!-- Bottom Text -->
-    <div class="bottom-row">
-      <span class="bottom-text">Don't have an account? <span class="signup-link">Sign Up</span></span>
-    </div>
-
-  </div>
-
 </ion-content>

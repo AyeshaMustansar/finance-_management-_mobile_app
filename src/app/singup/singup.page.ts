@@ -2,8 +2,9 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Router } from '@angular/router';
 import { addIcons } from 'ionicons';
-import { add, eyeOffOutline, logoFacebook, logoGoogle, mailOutline } from 'ionicons/icons';
+import { add, eyeOffOutline, fingerPrintOutline, happyOutline, logoFacebook, logoGoogle, mailOutline } from 'ionicons/icons';
 @Component({
 schemas:[CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-singup',
@@ -14,11 +15,13 @@ schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SingupPage implements OnInit {
 
-  constructor() {
+  constructor( private router: Router ) {
   addIcons({ add,mailOutline ,
     eyeOffOutline,
     logoGoogle,
     logoFacebook,
+    happyOutline,
+    fingerPrintOutline,
     
   });
   }
@@ -31,5 +34,25 @@ export class SingupPage implements OnInit {
     
     
   }
+
+goTocreateaccount() {
+  this.router.navigate(['/create-account']);
+}
+
+
+goToforgotpassword() {
+  this.router.navigate(['/forgot-password']);
+}
+
+
+goTobottomnavigation() {
+  this.router.navigate(['/bottomnavigation']);
+}
+
+goTosecurityfingerprint() {
+  this.router.navigate(['/security-fingerprint']);
+}
+
+
 
 }

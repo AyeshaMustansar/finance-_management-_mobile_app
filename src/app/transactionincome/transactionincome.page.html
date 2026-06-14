@@ -7,7 +7,7 @@
       <!-- Navbar -->
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline" (click)="goTotransaction()"    ></ion-icon>
         </div>
         <div class="nav-title">Transaction</div>
         <div class="nav-btn nav-btn--bell">
@@ -24,20 +24,20 @@
       <!-- Income / Expense Cards -->
       <div class="ie-row">
 
-        <div class="ie-card">
-          <div class="ie-icon-wrap ie-icon--teal">
-            <ion-icon name="arrow-up-outline"></ion-icon>
+        <div class="ie-card" (click)="goTotransitionincomee()">
+          <div class="ie-icon-wrap ie-icon--teal" (click)="goTotransitionincomee()">
+            <ion-icon name="arrow-up-outline"  (click)="goTotransitionincomee()"  ></ion-icon>
           </div>
-          <div class="ie-label">Income</div>
-          <div class="ie-amount">$4,120.00</div>
+          <div class="ie-label"  (click)="goTotransitionincomee()">Income</div>
+          <div class="ie-amount"  (click)="goTotransitionincomee()">$4,120.00</div>
         </div>
 
-        <div class="ie-card">
-          <div class="ie-icon-wrap ie-icon--blue">
-            <ion-icon name="arrow-down-outline"></ion-icon>
+        <div class="ie-card"  (click)="goTotrnasitionexpense()">
+          <div class="ie-icon-wrap ie-icon--blue"   (click)="goTotrnasitionexpense()">
+            <ion-icon name="arrow-down-outline"  (click)="goTotrnasitionexpense()"></ion-icon>
           </div>
-          <div class="ie-label">Expense</div>
-          <div class="ie-amount">$1,187.40</div>
+          <div class="ie-label" (click)="goTotrnasitionexpense()" >Expense</div>
+          <div class="ie-amount"  (click)="goTotrnasitionexpense()">$1,187.40</div>
         </div>
 
       </div>
@@ -138,11 +138,11 @@
 <ion-footer class="floating-footer">
   <div class="nav-item nav-item--active">
    
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon name="home-outline"  (click)="goTobottomnavigation()"></ion-icon>
   
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline" (click)="goTodaily()" ></ion-icon>
   </div>
    <div class="nav-active-bg">
   <div class="nav-item">
@@ -150,9 +150,9 @@
   </div>
   </div>
   <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
+    <ion-icon name="layers-outline" (click)="goTocategories()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="person-outline"></ion-icon>
+    <ion-icon name="person-outline"(click)="goToprofile()" ></ion-icon>
   </div>
 </ion-footer>

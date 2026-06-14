@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import {
   IonContent,
@@ -46,7 +47,7 @@ import {
 })
 export class EntertainmentPage implements OnInit {
 
-  constructor() {
+  constructor (   private router: Router) {
 
     addIcons({
       chevronBackOutline,
@@ -70,4 +71,33 @@ export class EntertainmentPage implements OnInit {
 
   ngOnInit() {}
 
+
+  
+                    goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+   
+              goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+              goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+   
+   goToprofile(){
+    this.router.navigate(['/profile']);
+   }
+
+
+
+                      goToaddexpense(){
+    this.router.navigate(['/add-expense']);
+   }
 }

@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -44,7 +44,7 @@ import {
 })
 export class SavingsPage implements OnInit {
 
-  constructor() {
+  constructor( private router: Router ) {
 
     addIcons({
       chevronBackOutline,
@@ -67,4 +67,49 @@ export class SavingsPage implements OnInit {
   ngOnInit() {
   }
 
+
+
+                    goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+   
+              goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+              goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+
+
+
+                      goToaddexpense(){
+    this.router.navigate(['/add-expense']);
+   }
+
+  goTotravelsavings(){
+    this.router.navigate(['/travelsavings']);
+   }
+   
+  goTohomesavings(){
+    this.router.navigate(['/home-savings']);
+   }
+
+
+     goTocarsavings(){
+    this.router.navigate(['/car-savings']);
+   }
+
+      goToprofile(){
+    this.router.navigate(['/profile']);
+   }
+     goToweddingsavings(){
+    this.router.navigate(['/wedding-savings']);
+   }
 }
