@@ -1,17 +1,17 @@
-// ── Content ────────────────────────────────────────────────
+
 .transaction-content {
   --background:#2ECFB0 ;
   --padding-top: 0;
-  --padding-bottom: 0;
+  --padding-bottom: 17px;
   --padding-start: 0;
   --padding-end: 0;
 }
 
-// ── Main Content Wrapper ───────────────────────────────────
+
 .main-content {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+
 }
 
 ion-content {
@@ -20,13 +20,12 @@ ion-content {
 
 
 
-// ── Top teal section ───────────────────────────────────────
 .top-section {
   background: #2ECFB0;
   padding: 52px 20px 28px;
 }
 
-// ── Navbar ─────────────────────────────────────────────────
+// ── Navbar 
 .navbar-row {
   display: flex;
   flex-direction: row;
@@ -64,7 +63,7 @@ ion-content {
   color:#052224;
 }
 
-// ── White Balance Card ─────────────────────────────────────
+
 .balance-card {
   background: #ffffff;
   border-radius: 20px;
@@ -86,7 +85,7 @@ ion-content {
   }
 }
 
-// ── Stats Row ──────────────────────────────────────────────
+
 .stats-row {
   display: flex;
   flex-direction: row;

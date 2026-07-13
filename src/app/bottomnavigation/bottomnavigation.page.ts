@@ -67,4 +67,8 @@ export class BottomnavigationPage implements OnInit {
     this.router.navigate(['/profile']);
    }
 
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
 }

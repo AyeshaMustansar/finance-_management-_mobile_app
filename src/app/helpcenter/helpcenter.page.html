@@ -5,28 +5,27 @@
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline" (click)="goToprofile()"></ion-icon>
         </div>
         <div class="nav-title">Help & FAQS</div>
-        <div class="nav-btn nav-btn--bell">
-          <ion-icon name="notifications-outline"></ion-icon>
+        <div class="nav-btn nav-btn--bell" (click)="goTonotification()">
+          <ion-icon name="notifications-outline"    (click)="goTonotification()" ></ion-icon>
         </div>
       </div>
     </div>
 
-    <!-- ===== WHITE SECTION ===== -->
+   
     <div class="white-section">
 
-      <!-- Question Heading -->
       <div class="help-heading">How Can We Help You?</div>
 
-      <!-- FAQ / Contact Us Toggle -->
+
       <div class="tab-row">
         <button type="button" class="tab-btn tab-btn--active">FAQ</button>
-        <button type="button" class="tab-btn">Contact Us</button>
+        <button type="button" class="tab-btn"  (click)="goTocontactus()"     >Contact Us</button>
       </div>
 
-      <!-- Category Tabs -->
+
       <div class="category-row">
         <button type="button" class="cat-btn cat-btn--active">General</button>
         <button type="button" class="cat-btn">Account</button>
@@ -89,22 +88,29 @@
   </div>
 </ion-content>
 
+
+
+
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon    name="home-outline"
+                                       (click)="goTobottomnavigation()">     </ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"               (click)="goTodaily()"            ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"  ></ion-icon>
   </div>
-  <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
-  </div>
-  <div class="nav-active-bg">
+
     <div class="nav-item">
-      <ion-icon name="person-outline"></ion-icon>
-    </div>
+      <ion-icon name="layers-outline"   (click)="goTocategories()"    ></ion-icon>
+
+  </div>
+    <div class="nav-active-bg">
+  <div class="nav-item nav-item--active">
+   
+    <ion-icon name="person-outline"></ion-icon>
+     </div>
   </div>
 </ion-footer>

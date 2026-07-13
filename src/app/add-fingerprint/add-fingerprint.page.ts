@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { chevronBackOutline, fingerPrintOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline } from 'ionicons/icons';
-
+import { Router } from '@angular/router';
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-add-fingerprint',
@@ -15,7 +15,7 @@ import { chevronBackOutline, fingerPrintOutline, homeOutline, layersOutline, not
 })
 export class AddFingerprintPage implements OnInit {
 
-  constructor() {
+  constructor( private router : Router) {
     addIcons({
       swapHorizontalOutline,
       homeOutline,
@@ -30,5 +30,43 @@ export class AddFingerprintPage implements OnInit {
 
   ngOnInit() {
   }
+ 
 
-}
+
+
+
+
+  
+  
+                  goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+  
+
+    goTofingerprint(){
+      this.router.navigate(['/fingerprint'])
+    }
+
+      goTofingerprintchangesuccessfully(){
+      this.router.navigate(['/fingerprintchangesuccessfully'])
+    }
+
+    goTonotification(){
+    this.router.navigate(['/notification'])
+   }
+    }
+
+

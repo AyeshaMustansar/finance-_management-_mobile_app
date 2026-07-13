@@ -60,4 +60,7 @@ goTotransitionincomee() {
    goToprofile(){
     this.router.navigate(['/profile']);
    }
+   goTonotification(){
+    this.router.navigate(['/notification']);
+   }
 }

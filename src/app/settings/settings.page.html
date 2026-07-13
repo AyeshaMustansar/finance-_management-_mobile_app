@@ -5,11 +5,11 @@
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline"  (click)="goToprofile()" ></ion-icon>
         </div>
         <div class="nav-title">Settings</div>
-        <div class="nav-btn nav-btn--bell">
-          <ion-icon name="notifications-outline"></ion-icon>
+        <div class="nav-btn nav-btn--bell" (click)="goTonotification()"  >
+          <ion-icon name="notifications-outline"(click)="goTonotification()"></ion-icon>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
       <div class="settings-container">
 
         <!-- Notification Settings -->
-        <div class="settings-item">
+        <div class="settings-item" (click)="goTonotificationsettings()">
           <div class="settings-icon-wrap">
             <ion-icon name="notifications-outline"></ion-icon>
           </div>
@@ -28,7 +28,7 @@
         </div>
 
         <!-- Password Settings -->
-        <div class="settings-item">
+        <div class="settings-item" (click)="goTopaswordchange()">
           <div class="settings-icon-wrap">
             <ion-icon name="lock-closed-outline"></ion-icon>
           </div>
@@ -41,7 +41,7 @@
           <div class="settings-icon-wrap">
             <ion-icon name="person-outline"></ion-icon>
           </div>
-          <div class="settings-label">Delete Account</div>
+          <div class="settings-label" (click)="goTodeleteaccount()" >Delete Account</div>
           <ion-icon name="chevron-forward-outline" class="settings-arrow"></ion-icon>
         </div>
 
@@ -64,20 +64,24 @@
 
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon    name="home-outline"
+                                       (click)="goTobottomnavigation()">     </ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"               (click)="goTodaily()"            ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"  ></ion-icon>
   </div>
-  <div class="nav-active-bg">
+
     <div class="nav-item">
-      <ion-icon name="layers-outline"></ion-icon>
-    </div>
+      <ion-icon name="layers-outline"   (click)="goTocategories()"    ></ion-icon>
+
   </div>
+    <div class="nav-active-bg">
   <div class="nav-item nav-item--active">
+   
     <ion-icon name="person-outline"></ion-icon>
+     </div>
   </div>
 </ion-footer>

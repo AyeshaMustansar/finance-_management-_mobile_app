@@ -56,4 +56,11 @@ export class WeddingSavingsPage implements OnInit {
                  goToprofile(){
     this.router.navigate(['/profile']);
    }
+
+  goTosavings(){
+    this.router.navigate(['/savings']);
+   } 
+   goTonotification(){
+    this.router.navigate(['/notification']);
+   } 
 }

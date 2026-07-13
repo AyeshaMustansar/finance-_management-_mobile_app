@@ -1,33 +1,33 @@
 <ion-content class="terms-content">
   <div class="main-content">
 
-    <!-- GREEN TOP SECTION -->
+
     <div class="top-section">
       <div class="navbar-row">
         <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+          <ion-icon name="chevron-back-outline"  (click)="goTosecurity()" ></ion-icon>
         </div>
         <div class="nav-title">Terms And Conditions</div>
-        <div class="nav-btn nav-btn--bell">
-          <ion-icon name="notifications-outline"></ion-icon>
+        <div class="nav-btn nav-btn--bell" (click)="goTonotification()">
+          <ion-icon name="notifications-outline" (click)="goTonotification()"></ion-icon>
         </div>
       </div>
     </div>
 
-    <!-- WHITE SECTION -->
+
     <div class="white-section">
 
       <div class="terms-container">
 
-        <!-- Heading -->
+
         <div class="terms-heading">Est Fugiat Assumenda Aut Reprehenderit</div>
 
-        <!-- Paragraph -->
+     
         <div class="terms-para">
           Lorem ipsum dolor sit amet. Et odio officia aut voluptate internos est omnis vitae ut architecto sunt non teneturr fuga ut provident vero. Quo aspernatur facere et consectetur ipsum et facere corrupt est aspernatur facere. Est fugiat assumenda aut reprehenderit voluptatem sed.
         </div>
 
-        <!-- Numbered List -->
+       
         <ol class="terms-list terms-list--numbered">
           <li>Ea voluptates omnis aut sequi sequi.</li>
           <li>Est dolore quae in aliquid ducimus et autem reprehendus.</li>
@@ -35,29 +35,27 @@
           <li>Sit consequuntur neque ab vitae facere.</li>
         </ol>
 
-        <!-- Paragraph 2 -->
+        
         <div class="terms-para">
           Aut quidem accusantium nam alias autem eum officiis placeat et omnis autem id officiis perspiciatis qui corrupti officia eum aliquam provident. Eum voluptas error et optio dolorum cum molestiae nobis et odit molestiae quo magnam impedit sed fugiat nihil non nihil vitae.
         </div>
 
-        <!-- Bullet List -->
         <ul class="terms-list terms-list--bullet">
           <li>Aut fuga sequi eum voluptatibus provident.</li>
           <li>Eos consequuntur voluptas vel amet eaque aut dignissimos velit.</li>
         </ul>
 
-        <!-- Paragraph 3 -->
         <div class="terms-para">
           Vel exercitationem quam vel eligendi rerum At harum consequatur et molestias. Quo quo? Es accusantium dolores qui rerum aliquam est perferendis mollitia et ipsum ipsa qui enim autem At corporis sunt. Aut edit quisquam est reprehenderit itaque aut accusantium dolor qui neque repellat.
         </div>
 
-        <!-- Link -->
+     
         <div class="terms-para">
           Read the terms and conditions in more detail at
           <span class="terms-link">www.finwiseapp.de</span>
         </div>
 
-        <!-- Checkbox -->
+
         <div class="terms-checkbox-row">
           <div class="checkbox-wrap">
             <ion-icon name="checkbox-outline" class="checkbox-icon"></ion-icon>
@@ -65,7 +63,7 @@
           <span class="checkbox-label">I accept all the terms and conditions</span>
         </div>
 
-        <!-- Accept Button -->
+    
         <div class="accept-btn">Accept</div>
 
       </div>
@@ -79,24 +77,27 @@
 
 
 
-
-
+ 
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon    name="home-outline"
+                                       (click)="goTobottomnavigation()">     </ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"               (click)="goTodaily()"            ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"  ></ion-icon>
   </div>
-  <div class="nav-active-bg">
+
     <div class="nav-item">
-      <ion-icon name="layers-outline"></ion-icon>
-    </div>
+      <ion-icon name="layers-outline"   (click)="goTocategories()"    ></ion-icon>
+
   </div>
+    <div class="nav-active-bg">
   <div class="nav-item nav-item--active">
+   
     <ion-icon name="person-outline"></ion-icon>
+     </div>
   </div>
 </ion-footer>

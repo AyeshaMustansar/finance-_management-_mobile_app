@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { Location } from '@angular/common';
 import {
   IonContent,
   IonHeader,
@@ -22,6 +22,7 @@ import {
   layersOutline,
   searchOutline
 } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -40,7 +41,11 @@ import {
 })
 export class AddExpensePage implements OnInit {
 
-  constructor() {
+  constructor(
+  private router: Router,
+  private location: Location
+) 
+   {
 
     addIcons({
       chevronBackOutline,
@@ -60,4 +65,38 @@ export class AddExpensePage implements OnInit {
   ngOnInit() {
   }
 
+
+
+
+  
+
+
+   goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+
+   
+    goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
+
+
+
+   goBack() {
+  this.location.back();
+}
 }

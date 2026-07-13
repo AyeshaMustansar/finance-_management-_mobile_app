@@ -100,4 +100,13 @@ export class EntertainmentPage implements OnInit {
                       goToaddexpense(){
     this.router.navigate(['/add-expense']);
    }
+
+
+
+
+       goTonotification(){
+    this.router.navigate(['/notification']);
+   } 
+
+
 }

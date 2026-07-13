@@ -5,7 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { addIcons } from 'ionicons';
 import { Router } from '@angular/router';
 import { chevronBackOutline, ellipseOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline } from 'ionicons/icons';
-
+import { Location } from '@angular/common';
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-addsavings',
@@ -16,7 +16,10 @@ import { chevronBackOutline, ellipseOutline, homeOutline, layersOutline, notific
 })
 export class AddsavingsPage implements OnInit {
 
-  constructor(    private router: Router  ) { 
+  constructor(    private router: Router,
+    private location:Location,
+
+    ) { 
     addIcons(
       {
         homeOutline,
@@ -38,5 +41,37 @@ export class AddsavingsPage implements OnInit {
     this.router.navigate(['/profile']);
    }
 
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
+
+
+
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+              goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+                
+
+   
+
+    goBack() {
+  this.location.back();
+}
+ 
+
+
 
 }
+
+

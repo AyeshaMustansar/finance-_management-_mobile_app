@@ -76,4 +76,8 @@ export class WeeklyPage implements OnInit {
     goToprofile(){
     this.router.navigate(['/profile']);
    }  
+
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }  
 }

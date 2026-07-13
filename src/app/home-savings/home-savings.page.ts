@@ -36,6 +36,9 @@ export class HomeSavingsPage implements OnInit {
   }
 
 
+       goTonotification(){
+    this.router.navigate(['/notification']);
+   } 
 
   
      goToaddsavings(){
@@ -53,6 +56,9 @@ export class HomeSavingsPage implements OnInit {
     this.router.navigate(['/bottomnavigation']);
    }
 
+  goTosavings(){
+    this.router.navigate(['/savings']);
+   } 
 
                  goToprofile(){
     this.router.navigate(['/profile']);

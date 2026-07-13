@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { arrowDown, arrowDownOutline, arrowUp, arrowUpOutline, barChartOutline, basketOutline, busOutline, cardOutline, cashOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline, walletOutline } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -15,7 +16,7 @@ import { arrowDown, arrowDownOutline, arrowUp, arrowUpOutline, barChartOutline, 
 })
 export class AccountbalancePage implements OnInit {
 
-  constructor() { 
+  constructor( private router : Router,) { 
     addIcons({
      cardOutline,
      chevronBackOutline,
@@ -39,5 +40,36 @@ export class AccountbalancePage implements OnInit {
 
   ngOnInit() {
   }
+
+
+      goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+  
+
+   goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
+
+   
+   goToprofile(){
+    this.router.navigate(['/profile']);
+   }
+  
+
 
 }

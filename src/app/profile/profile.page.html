@@ -6,8 +6,8 @@
 
       <!-- Navbar -->
       <div class="navbar-row">
-        <div class="nav-btn nav-btn--back">
-          <ion-icon name="chevron-back-outline"></ion-icon>
+        <div class="nav-btn nav-btn--back" (click)="goTobottomnavigation()" >
+          <ion-icon name="chevron-back-outline" ></ion-icon>
         </div>
         <div class="nav-title">Profile</div>
         <div class="nav-btn-placeholder"></div>
@@ -30,38 +30,38 @@
 
       <!-- Edit Profile -->
       <div class="menu-item">
-        <div class="menu-icon-wrap teal">
+        <div class="menu-icon-wrap teal"   (click)="goToeditprofile()"  >
           <ion-icon name="person-outline"></ion-icon>
         </div>
-        <span class="menu-label">Edit Profile</span>
-        <ion-icon name="chevron-forward-outline" class="menu-arrow"></ion-icon>
+        <span class="menu-label"   (click)="goToeditprofile()" >Edit Profile</span>
+        <ion-icon name="chevron-forward-outline" class="menu-arrow"    (click)="goToeditprofile()"  ></ion-icon>
       </div>
 
       <!-- Security -->
-      <div class="menu-item">
+      <div class="menu-item" (click)="goTosecurity()">
         <div class="menu-icon-wrap teal">
           <ion-icon name="shield-checkmark-outline"></ion-icon>
         </div>
-        <span class="menu-label">Security</span>
-        <ion-icon name="chevron-forward-outline" class="menu-arrow"></ion-icon>
+        <span class="menu-label" (click)="goTosecurity()">Security</span>
+        <ion-icon name="chevron-forward-outline" class="menu-arrow"  (click)="goTosecurity()"  ></ion-icon>
       </div>
 
       <!-- Setting -->
-      <div class="menu-item">
-        <div class="menu-icon-wrap teal">
+      <div class="menu-item"  >
+        <div class="menu-icon-wrap teal"    (click)="goTosettings()"  >
           <ion-icon name="settings-outline"></ion-icon>
         </div>
-        <span class="menu-label">Setting</span>
-        <ion-icon name="chevron-forward-outline" class="menu-arrow"></ion-icon>
+        <span class="menu-label"(click)="goTosettings()" >Setting</span>
+        <ion-icon name="chevron-forward-outline" class="menu-arrow"     (click)="goTosettings()"  ></ion-icon>
       </div>
 
       <!-- Help -->
-      <div class="menu-item">
-        <div class="menu-icon-wrap teal">
+      <div class="menu-item"      >  
+        <div class="menu-icon-wrap teal"    (click)="goTohelpcenter()"   >
           <ion-icon name="help-circle-outline"></ion-icon>
         </div>
-        <span class="menu-label">Help</span>
-        <ion-icon name="chevron-forward-outline" class="menu-arrow"></ion-icon>
+        <span class="menu-label"     (click)="goTohelpcenter()"      >Help</span>
+        <ion-icon name="chevron-forward-outline" class="menu-arrow"    (click)="goTohelpcenter()"      ></ion-icon>
       </div>
 
       <!-- Logout -->
@@ -82,17 +82,17 @@
 
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon name="home-outline"  (click)="goTobottomnavigation()"  ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"  (click)="goTodaily()"></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"></ion-icon>
   </div>
  
     <div class="nav-item">
-      <ion-icon name="layers-outline"></ion-icon>
+      <ion-icon name="layers-outline"  (click)="goTocategories()"></ion-icon>
    
   </div>
 

@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import {
   IonContent,
@@ -38,7 +39,7 @@ import {
 })
 export class EditprofilePage implements OnInit {
 
-  constructor() {
+  constructor(   private router: Router  ) {
 
     addIcons({
       chevronBackOutline,
@@ -54,5 +55,34 @@ export class EditprofilePage implements OnInit {
 
   ngOnInit() {
   }
+
+
+
+
+                  goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+
+   goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+   
+    goToprofile(){
+    this.router.navigate(['/profile']);
+   }
+
 
 }

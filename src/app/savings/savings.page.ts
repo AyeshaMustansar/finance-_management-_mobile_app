@@ -112,4 +112,8 @@ export class SavingsPage implements OnInit {
      goToweddingsavings(){
     this.router.navigate(['/wedding-savings']);
    }
+
+       goTonotification(){
+    this.router.navigate(['/notification']);
+   } 
 }

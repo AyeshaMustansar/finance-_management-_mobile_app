@@ -56,5 +56,11 @@ export class CarSavingsPage implements OnInit {
     this.router.navigate(['/profile']);
    }
 
-   
+   goTonotification(){
+    this.router.navigate(['/notification']);
+   } 
+
+     goTosavings(){
+    this.router.navigate(['/savings']);
+   } 
 }

@@ -4,12 +4,12 @@
     <!-- ===== GREEN TOP SECTION ===== -->
     <div class="top-section">
       <div class="navbar-row">
-        <div class="nav-btn nav-btn--back">
+        <div class="nav-btn nav-btn--back"  (click)="goTofingerprint()">
           <ion-icon name="chevron-back-outline"></ion-icon>
         </div>
         <div class="nav-title">Jhon Fingerprint</div>
-        <div class="nav-btn nav-btn--bell">
-          <ion-icon name="notifications-outline"></ion-icon>
+        <div class="nav-btn nav-btn--bell" (click)="goTonotification()">
+          <ion-icon name="notifications-outline" (click)="goTonotification()"></ion-icon>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="fp-name">Jhon Fingerprint</div>
 
       <!-- Delete Button -->
-      <div class="delete-btn">Delete</div>
+      <div class="delete-btn"  (click)="goTofingerprintelaminate()" >Delete</div>
 
     </div>
 
@@ -35,20 +35,24 @@
 
 <ion-footer class="floating-footer">
   <div class="nav-item">
-    <ion-icon name="home-outline"></ion-icon>
+    <ion-icon    name="home-outline"
+                                       (click)="goTobottomnavigation()">     </ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="search-outline"               (click)="goTodaily()"            ></ion-icon>
   </div>
   <div class="nav-item">
-    <ion-icon name="swap-horizontal-outline"></ion-icon>
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"  ></ion-icon>
   </div>
-  <div class="nav-item">
-    <ion-icon name="layers-outline"></ion-icon>
-  </div>
-  <div class="nav-active-bg">
+
     <div class="nav-item">
-      <ion-icon name="person-outline"></ion-icon>
-    </div>
+      <ion-icon name="layers-outline"   (click)="goTocategories()"    ></ion-icon>
+
+  </div>
+    <div class="nav-active-bg">
+  <div class="nav-item nav-item--active">
+   
+    <ion-icon name="person-outline"></ion-icon>
+     </div>
   </div>
 </ion-footer>

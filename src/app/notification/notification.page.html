@@ -1,155 +1,165 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar class="notif-toolbar">
-    <ion-buttons slot="start">
-      <ion-button class="back-btn">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+<ion-content [fullscreen]="true" class="notif-content">
+  <div class="page-wrapper">
 
-    <ion-title class="notif-title">Notification</ion-title>
-
-    <ion-buttons slot="end">
-      <ion-button class="bell-btn">
+  <!-- Top Teal Header Section -->
+  <div class="top-section">
+    <div class="top-bar">
+      <div class="icon-circle back-btn"    >
+        <ion-icon name="chevron-back-outline"    (click)="goBack()" ></ion-icon>
+      </div>
+      <h1 class="page-title">Notification</h1>
+      <!-- <div class="icon-circle bell-btn"  >
         <ion-icon name="notifications-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="notif-content">
-
-  <div class="notif-card">
-
-    <!-- TODAY SECTION -->
-    <div class="section-label">Today</div>
-
-    <!-- Reminder -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-teal">
-        <ion-icon name="notifications-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">Reminder!</div>
-        <div class="notif-desc">Set up your automatic savings to meet your savings goal...</div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
+      </div> -->
     </div>
-
-    <div class="divider"></div>
-
-    <!-- New Update -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-teal">
-        <ion-icon name="shield-checkmark-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">New Update</div>
-        <div class="notif-desc">Set up your automatic savings to meet your savings goal...</div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
-    </div>
-
-    <!-- YESTERDAY SECTION -->
-    <div class="section-label section-label--gap">Yesterday</div>
-
-    <!-- Transactions -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-green">
-        <ion-icon name="cash-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">Transactions</div>
-        <div class="notif-desc">A new transaction has been registered</div>
-        <div class="notif-tags">
-          <span class="tag">Groceries</span>
-          <span class="tag-sep">|</span>
-          <span class="tag">Pantry</span>
-          <span class="tag-sep">|</span>
-          <span class="tag tag-red">-$100.00</span>
-        </div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Reminder 2 -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-teal">
-        <ion-icon name="notifications-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">Reminder!</div>
-        <div class="notif-desc">Set up your automatic savings to meet your savings goal...</div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
-    </div>
-
-    <!-- THIS WEEKEND SECTION -->
-    <div class="section-label section-label--gap">This Weekend</div>
-
-    <!-- Expense Record -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-orange">
-        <ion-icon name="trending-down-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">Expense Record</div>
-        <div class="notif-desc">We recommend that you be more attentive to your finances.</div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Transactions Weekend -->
-    <div class="notif-item">
-      <div class="notif-icon-wrap icon-green">
-        <ion-icon name="cash-outline"></ion-icon>
-      </div>
-      <div class="notif-body">
-        <div class="notif-name">Transactions</div>
-        <div class="notif-desc">A new transaction has been registered</div>
-        <div class="notif-tags">
-          <span class="tag">Food</span>
-          <span class="tag-sep">|</span>
-          <span class="tag">Dinner</span>
-          <span class="tag-sep">|</span>
-          <span class="tag tag-red">-$70.40</span>
-        </div>
-        <div class="notif-time">17:00 - April 24</div>
-      </div>
-    </div>
-
   </div>
 
+  <!-- White Content Section -->
+  <div class="notif-list-wrapper">
+    <ion-grid class="notif-grid">
+
+      <!-- Today -->
+      <ion-row>
+        <ion-col size="12">
+          <h3 class="date-label">Today</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="notifications"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>Reminder!</h4>
+          <p>Set up your automatic savings to meet your savings goal...</p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+      <div class="divider"></div>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>New Update</h4>
+          <p>Set up your automatic savings to meet your savings goal...</p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- Yesterday -->
+      <ion-row>
+        <ion-col size="12">
+          <h3 class="date-label">Yesterday</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="cash"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>Transactions</h4>
+          <p><span class="tag">Groceries</span> | <span class="tag">Pantry</span> | <span class="amount">-$100,00</span></p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+      <div class="divider"></div>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="notifications"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>Reminder!</h4>
+          <p>Set up your automatic savings to meet your savings goal...</p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+
+      <!-- This Weekend -->
+      <ion-row>
+        <ion-col size="12">
+          <h3 class="date-label">This Weekend</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="arrow-redo"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>Expense Record</h4>
+          <p>We recommend that you be more attentive to your finances.</p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+      <div class="divider"></div>
+
+      <ion-row class="notif-item">
+        <ion-col size="2" class="icon-col">
+          <div class="notif-icon">
+            <ion-icon name="cash"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="7" class="text-col">
+          <h4>Transactions</h4>
+          <p><span class="tag">Food</span> | <span class="tag">Dinner</span> | <span class="amount">-$70,40</span></p>
+        </ion-col>
+        <ion-col size="3" class="time-col">
+          <span>17:00 - April 24</span>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+
+  </div>
 </ion-content>
 
 
-<ion-footer class="floating-footer"  >
  
-    <div class="nav-item ">
-
-        <ion-icon name="home-outline"></ion-icon>
-      </div>
-
-
-
-    <div class="nav-item">
-      <ion-icon name="search-outline"></ion-icon>
-    </div>
-
- 
-    <div class="nav-item">
-      <ion-icon name="swap-horizontal-outline"></ion-icon>
-    </div>
+<ion-footer class="floating-footer">
+  <div class="nav-item">
+    <ion-icon    name="home-outline"
+                                       (click)="goTobottomnavigation()">     </ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="search-outline"               (click)="goTodaily()"            ></ion-icon>
+  </div>
+  <div class="nav-item">
+    <ion-icon name="swap-horizontal-outline" (click)="goTotransaction()"  ></ion-icon>
+  </div>
 
     <div class="nav-item">
-      <ion-icon name="layers-outline"></ion-icon>
-    </div>
+      <ion-icon name="layers-outline"   (click)="goTocategories()"    ></ion-icon>
 
-    <div class="nav-item">
-      <ion-icon name="person-outline"></ion-icon>
-    </div>
-
+  </div>
+    <div class="nav-active-bg">
+  <div class="nav-item nav-item--active">
+   
+    <ion-icon name="person-outline"></ion-icon>
+     </div>
+  </div>
 </ion-footer>

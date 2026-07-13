@@ -84,4 +84,8 @@ export class YearlyPage implements OnInit {
       goToprofile(){
     this.router.navigate(['/profile']);
    }
+
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
 }

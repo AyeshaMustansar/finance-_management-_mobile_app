@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -30,6 +30,7 @@ import {
   personOutline
 } from 'ionicons/icons';
 
+
 @Component({
   selector: 'app-groceries',
   templateUrl: './groceries.page.html',
@@ -47,7 +48,7 @@ import {
 })
 export class GroceriesPage implements OnInit {
 
-  constructor() {
+  constructor(private router:Router) {
 
     addIcons({
       chevronBackOutline,
@@ -71,5 +72,12 @@ export class GroceriesPage implements OnInit {
   }
 
   ngOnInit() {}
+
+ goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
 
 }

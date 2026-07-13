@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchOutline, swapHorizontalOutline } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -15,7 +16,7 @@ import { checkboxOutline, chevronBackOutline, homeOutline, layersOutline, notifi
 })
 export class ConditionsPage implements OnInit {
 
-  constructor() { 
+  constructor(private router:Router) { 
     addIcons({
       homeOutline,
       swapHorizontalOutline,
@@ -31,4 +32,33 @@ export class ConditionsPage implements OnInit {
   ngOnInit() {
   }
 
+
+
+  
+                  goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+
+      
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
+
+    goTosecurity(){
+    this.router.navigate(['/security']);
+   }
 }

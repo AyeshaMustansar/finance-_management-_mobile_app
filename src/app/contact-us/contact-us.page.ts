@@ -8,6 +8,7 @@ import {
   IonToolbar
 } from '@ionic/angular/standalone';
 
+
 import { addIcons } from 'ionicons';
 
 import {
@@ -27,6 +28,12 @@ import {
   personOutline
 } from 'ionicons/icons';
 
+
+
+import { Router } from '@angular/router';
+
+
+
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-contact-us',
@@ -44,7 +51,7 @@ import {
 })
 export class ContactUsPage implements OnInit {
 
-  constructor() {
+  constructor(   private router:Router) {
 
     addIcons({
       chevronBackOutline,
@@ -68,4 +75,46 @@ export class ContactUsPage implements OnInit {
   ngOnInit() {
   }
 
+
+
+                  goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+
+
+   
+
+
+
+
+
+
+    goTocontactus(){
+    this.router.navigate(['/contact-us']);
+   }
+
+
+
+     goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+     goTohelpcenter(){
+    this.router.navigate(['/helpcenter']);
+   }
+
+
 }
+

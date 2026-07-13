@@ -71,6 +71,11 @@ export class MedicinePage implements OnInit {
    }
 
 
+    
+              goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
    
               goTodaily(){
     this.router.navigate(['/daily']);

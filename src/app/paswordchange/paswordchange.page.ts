@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { chevronBackOutline, eyeOffOutline, homeOutline, layersOutline, notificationsOutline, personOutline, searchCircleOutline, searchOutline, swapHorizontal, swapHorizontalOutline } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -15,7 +16,7 @@ import { chevronBackOutline, eyeOffOutline, homeOutline, layersOutline, notifica
 })
 export class PaswordchangePage implements OnInit {
 
-  constructor() {
+  constructor(   private router :Router ) {
     addIcons({
       chevronBackOutline,
       homeOutline,
@@ -31,5 +32,54 @@ export class PaswordchangePage implements OnInit {
 
   ngOnInit() {
   }
+
+
+
+  
+
+  
+                  goTotransaction(){
+    this.router.navigate(['/transaction']);
+   }
+
+                 goTobottomnavigation(){
+    this.router.navigate(['/bottomnavigation']);
+   }
+
+  goTocategories(){
+    this.router.navigate(['/categories']);
+   }
+
+
+    goTodaily(){
+    this.router.navigate(['/daily']);
+   }
+
+
+   
+
+
+    goTopaswordchangesuccessfully(){
+    this.router.navigate(['/paswordchangesuccessfully']);
+   }
+
+
+
+    goTosettings(){
+    this.router.navigate(['/settings']);
+   }
+
+      goTonotification(){
+    this.router.navigate(['/notification']);
+   }
+
+   
+   
+
+
+
+
+
+
 
 }
