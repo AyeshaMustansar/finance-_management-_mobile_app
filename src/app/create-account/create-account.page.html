@@ -1,68 +1,85 @@
 <ion-content [fullscreen]="true" class="create-account-content">
 
-  <!-- Green Top Section -->
+
   <div class="green-top">
     <h1 class="page-title">Create Account</h1>
   </div>
 
-  <!-- White Bottom Sheet -->
+
   <div class="white-sheet">
 
-    <!-- Full Name -->
+
     <div class="input-group">
       <label class="input-label">Full Name</label>
       <div class="input-wrapper">
-        <ion-input type="text" placeholder="example@example.com" class="custom-input"></ion-input>
+        <ion-input type="text" placeholder="" class="custom-input"
+        
+          [(ngModel)]="name"
+        ></ion-input>
       </div>
     </div>
 
-    <!-- Email -->
+
     <div class="input-group">
       <label class="input-label">Email</label>
       <div class="input-wrapper">
-        <ion-input type="email" placeholder="example@example.com" class="custom-input"></ion-input>
+        <ion-input type="email" placeholder="" class="custom-input"
+        
+          [(ngModel)]="email"
+        
+        ></ion-input>
       </div>
     </div>
 
-    <!-- Mobile Number -->
+
     <div class="input-group">
       <label class="input-label">Mobile Number</label>
       <div class="input-wrapper">
-        <ion-input type="tel" placeholder="+ 123 456 789" class="custom-input"></ion-input>
+        <ion-input type="tel" placeholder="" class="custom-input"
+          
+          [(ngModel)]="number"
+        ></ion-input>
       </div>
     </div>
 
-    <!-- Date Of Birth -->
+   
     <div class="input-group">
       <label class="input-label">Date Of Birth</label>
       <div class="input-wrapper">
-        <ion-input type="text" placeholder="DD / MM / YYY" class="custom-input"></ion-input>
+        <ion-input type="text" placeholder="DD / MM / YYY" class="custom-input"
+          [(ngModel)]="datebirth"
+        ></ion-input>
       </div>
     </div>
 
-    <!-- Password -->
+
     <div class="input-group">
       <label class="input-label">Password</label>
       <div class="input-wrapper input-wrapper--icon">
-        <ion-input type="password" placeholder="••••••••••" class="custom-input"></ion-input>
+        <ion-input type="password" placeholder="••••••••••" class="custom-input"
+           [(ngModel)]="password"
+        ></ion-input>
         <button class="eye-btn" type="button">
           <ion-icon name="eye-outline"></ion-icon>
         </button>
       </div>
     </div>
 
-    <!-- Confirm Password -->
+
     <div class="input-group">
       <label class="input-label">Confirm Password</label>
       <div class="input-wrapper input-wrapper--icon">
-        <ion-input type="password" placeholder="••••••••••" class="custom-input"></ion-input>
+        <ion-input type="password" placeholder="••••••••••" class="custom-input"
+        
+          [(ngModel)]="confirmpassword"
+        ></ion-input>
         <button class="eye-btn" type="button">
           <ion-icon name="eye-outline"></ion-icon>
         </button>
       </div>
     </div>
 
-    <!-- Terms -->
+   
     <p class="terms-text">
       By continuing, you agree to<br>
       <button class="link-btn" type="button" (click)="goToconditions()">Terms of Use</button>
@@ -70,10 +87,9 @@
       <button class="link-btn" type="button">Privacy Policy.</button>
     </p>
 
-    <!-- Sign Up Button -->
-    <button class="signup-btn" type="button"     (click)="goTobottomnavigation()"   >Sign Up</button>
 
-    <!-- Already have account -->
+    <button class="signup-btn" type="button"     (click)="onSingup()"   >Sign Up</button>
+
     <div class="login-row">
       <span class="login-text">Already have an account?</span>
       <button class="link-btn login-link" type="button"(click)="goTosingup()">Log In</button>

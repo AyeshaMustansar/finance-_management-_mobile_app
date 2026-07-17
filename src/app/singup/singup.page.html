@@ -1,25 +1,28 @@
 <ion-content class="login-content">
   <div class="main-content">
 
-    <!-- TOP GREEN SECTION -->
+   
     <div class="top-section">
       <h1 class="welcome-title">Welcome</h1>
     </div>
 
-    <!-- WHITE CARD SECTION -->
+
     <div class="white-section">
 
-      <!-- Username / Email -->
+  
       <div class="input-group">
         <label class="input-label">Username Or Email</label>
         <input
           type="email"
           class="input-field"
-          placeholder="example@example.com"
+          placeholder=""
+           [(ngModel)]="email"
+
+
         />
       </div>
 
-      <!-- Password -->
+
       <div class="input-group">
         <label class="input-label">Password</label>
         <div class="input-password-wrap">
@@ -27,29 +30,34 @@
             type="password"
             class="input-field"
             placeholder="••••••••"
+                    [(ngModel)]="password"
           />
           <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
         </div>
       </div>
 
-      <!-- Log In Button -->
+
       <div class="btn-wrap">
-        <button class="btn-login" (click)="goTobottomnavigation()">Log In</button>
+<button 
+  class="btn-login" 
+  [disabled]="isButtonDisabled"
+  (click)="onLogin()">
+  {{ isButtonDisabled ? 'Login Disabled' : 'Log In' }}
+</button>
       </div>
 
-      <!-- Forgot Password -->
       <div class="forgot-wrap">
         <button class="btn-forgot"  (click)="goToforgotpassword()"  >Forgot Password?</button>
       </div>
 
-      <!-- Sign Up Button -->
+
       <div class="btn-wrap">
       <button class="btn-signup" (click)="goTocreateaccount()">
   Sign Up
 </button>
       </div>
 
-      <!-- Fingerprint -->
+
       <div class="fingerprint-wrap">
         <p class="fingerprint-text"  (click)="goTosecurityfingerprint()">Use Fingerprint To Access</p>
         <div class="fingerprint-icons">
@@ -62,13 +70,25 @@
         </div>
       </div>
 
-      <!-- Bottom link -->
       <div class="bottom-link-wrap">
         <p class="bottom-link-text"    (click)="goTocreateaccount()"    >Don't have an account? <span class="link-sign">Sign Up</span></p>
       </div>
 
     </div>
-    <!-- END WHITE SECTION -->
+   
 
   </div>
+
+
+
+
+  <!-- Custom Alert Popup -->
+<div class="custom-alert-overlay" *ngIf="showAlert">
+  <div class="custom-alert-box" [ngClass]="alertType">
+    <p class="alert-message">{{ alertMessage }}</p>
+    <button class="alert-close-btn" (click)="closeAlert()">OK</button>
+  </div>
+</div>
+
+
 </ion-content>
