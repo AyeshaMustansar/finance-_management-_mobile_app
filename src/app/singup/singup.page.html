@@ -1,65 +1,79 @@
 <ion-content class="login-content">
   <div class="main-content">
 
-   
     <div class="top-section">
       <h1 class="welcome-title">Welcome</h1>
     </div>
 
-
     <div class="white-section">
 
-  
-      <div class="input-group">
-        <label class="input-label">Username Or Email</label>
-        <input
-          type="email"
-          class="input-field"
-          placeholder=""
-           [(ngModel)]="email"
+      <!-- form tag zaroori hai ab -->
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
 
-
-        />
-      </div>
-
-
-      <div class="input-group">
-        <label class="input-label">Password</label>
-        <div class="input-password-wrap">
+        <div class="input-group">
+          <label class="input-label">Username Or Email</label>
           <input
-            type="password"
+            type="email"
             class="input-field"
-            placeholder="••••••••"
-                    [(ngModel)]="password"
+            placeholder=""
+            formControlName="email"
           />
-          <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
         </div>
-      </div>
 
+        <div class="input-group">
+          <label class="input-label">Password</label>
+          <div class="input-password-wrap">
+            <input
+              type="password"
+              class="input-field"
+              placeholder="••••••••"
+              formControlName="password"
+            />
+            <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+          </div>
 
-      <div class="btn-wrap">
-<button 
-  class="btn-login" 
-  [disabled]="isButtonDisabled"
-  (click)="onLogin()">
-  {{ isButtonDisabled ? 'Login Disabled' : 'Log In' }}
-</button>
-      </div>
+        
+<div class="password-rules" *ngIf="(loginForm.get('password')?.value?.length ?? 0) > 0">
+            <p [ngClass]="hasMinLength ? 'rule-valid' : 'rule-invalid'">
+              {{ hasMinLength ? '✓' : '✗' }} Minimum 7 characters
+            </p>
+            <p [ngClass]="hasUpperCase ? 'rule-valid' : 'rule-invalid'">
+              {{ hasUpperCase ? '✓' : '✗' }} At least 1 uppercase letter
+            </p>
+            <p [ngClass]="hasSpecialChar ? 'rule-valid' : 'rule-invalid'">
+              {{ hasSpecialChar ? '✓' : '✗' }} At least 1 special character
+            </p>
+            <p [ngClass]="hasDigitChar ? 'rule-valid' : 'rule-invalid'">
+              {{ hasDigitChar ? '✓' : '✗' }} At least 1 digit
+            </p>
+          </div>
+        </div>
+
+        <div class="btn-wrap">
+          <button 
+            type="submit"
+            class="btn-login" 
+            [disabled]="isButtonDisabled || loginForm.invalid">
+            {{ isButtonDisabled 
+                ? 'Try again in ' + countdown + 's' 
+                : (loginForm.valid ? 'Log In' : 'Login Disabled') }}
+          </button>
+        </div>
+
+      </form>
 
       <div class="forgot-wrap">
-        <button class="btn-forgot"  (click)="goToforgotpassword()"  >Forgot Password?</button>
+        <button class="btn-forgot" (click)="goToforgotpassword()">Forgot Password?</button>
       </div>
-
 
       <div class="btn-wrap">
-      <button class="btn-signup" (click)="goTocreateaccount()">
-  Sign Up
-</button>
+        <button class="btn-signup" (click)="goTocreateaccount()">
+          Sign Up
+        </button>
       </div>
 
-
       <div class="fingerprint-wrap">
-        <p class="fingerprint-text"  (click)="goTosecurityfingerprint()">Use Fingerprint To Access</p>
+        <p class="fingerprint-text" (click)="goTosecurityfingerprint()">Use Fingerprint To Access</p>
         <div class="fingerprint-icons">
           <button class="fp-btn">
             <ion-icon name="logo-google"></ion-icon>
@@ -71,24 +85,19 @@
       </div>
 
       <div class="bottom-link-wrap">
-        <p class="bottom-link-text"    (click)="goTocreateaccount()"    >Don't have an account? <span class="link-sign">Sign Up</span></p>
+        <p class="bottom-link-text" (click)="goTocreateaccount()">Don't have an account? <span class="link-sign">Sign Up</span></p>
       </div>
 
     </div>
-   
 
   </div>
-
-
-
 
   <!-- Custom Alert Popup -->
-<div class="custom-alert-overlay" *ngIf="showAlert">
-  <div class="custom-alert-box" [ngClass]="alertType">
-    <p class="alert-message">{{ alertMessage }}</p>
-    <button class="alert-close-btn" (click)="closeAlert()">OK</button>
+  <div class="custom-alert-overlay" *ngIf="showAlert">
+    <div class="custom-alert-box" [ngClass]="alertType">
+      <p class="alert-message">{{ alertMessage }}</p>
+      <button class="alert-close-btn" (click)="closeAlert()">OK</button>
+    </div>
   </div>
-</div>
-
 
 </ion-content>
