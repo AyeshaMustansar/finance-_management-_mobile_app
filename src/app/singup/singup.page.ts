@@ -15,7 +15,7 @@ import { add, eyeOffOutline, eyeOutline, fingerPrintOutline, happyOutline, logoF
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, ReactiveFormsModule]
 })
 export class SingupPage implements OnInit {
-   
+
   storedEmail: string = 'choimoi594@gmail.com';
   storedPassword: string = 'A123456789@';
 
@@ -141,6 +141,4 @@ export class SingupPage implements OnInit {
     this.router.navigate(['/security-fingerprint']);
   }
 
-} 
-
-
+}
